@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>IPO Radar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F3F5F8; --panel:#FFFFFF; --sunk:#EAEEF3; --ink:#0F1B2D; --ink2:#46546A; --ink3:#7A869A; --line:#DCE2EA;
+  --accent:#1F4FD1; --accent-soft:#E4EBFC;
+  --apply:#0E7C4A; --apply-soft:#DDF3E7; --listing:#1B6FA8; --listing-soft:#DDEDF8;
+  --wait:#A76A00; --wait-soft:#FBEFD6; --avoid:#C23A33; --avoid-soft:#FADFDC;
+  --bar:#1F4FD1; --bar-track:#E6EBF2;
+  --display:"IBM Plex Sans Condensed","IBM Plex Sans",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;
+  --bg:#0B111B;--panel:#121A27;--sunk:#18222F;--ink:#E7ECF3;--ink2:#A9B4C4;--ink3:#6F7B8E;--line:#243042;
+  --accent:#7C9CFF;--accent-soft:#1B2747;--apply:#3CC98A;--apply-soft:#12301F;--listing:#5DB3EA;--listing-soft:#122A3C;
+  --wait:#F0B64A;--wait-soft:#33270F;--avoid:#F07A70;--avoid-soft:#3A1B19;--bar:#7C9CFF;--bar-track:#223047;}}
+:root[data-theme="dark"]{color-scheme:dark;
+  --bg:#0B111B;--panel:#121A27;--sunk:#18222F;--ink:#E7ECF3;--ink2:#A9B4C4;--ink3:#6F7B8E;--line:#243042;
+  --accent:#7C9CFF;--accent-soft:#1B2747;--apply:#3CC98A;--apply-soft:#12301F;--listing:#5DB3EA;--listing-soft:#122A3C;
+  --wait:#F0B64A;--wait-soft:#33270F;--avoid:#F07A70;--avoid-soft:#3A1B19;--bar:#7C9CFF;--bar-track:#223047;}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--body);margin:0;padding:0 16px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:22px;padding-block:22px}
+h1{font:700 30px/1.05 var(--display);margin:0;letter-spacing:-.01em}
+h2{font:700 21px/1.2 var(--display);margin:0;text-wrap:balance}
+h3{font:600 13px/1.2 var(--body);margin:0;text-transform:uppercase;letter-spacing:.07em;color:var(--ink3)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink3)}
+a{color:var(--accent)}
+button{font-family:var(--body);cursor:pointer}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.stamp{font:500 12.5px var(--mono);color:var(--ink2);display:flex;flex-direction:column;align-items:flex-end;gap:2px;text-align:right}
+.live{display:inline-flex;align-items:center;gap:6px}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--apply)}
+.live.stale i{background:var(--wait)}
+
+/* brief */
+.brief{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px}
+@media (max-width:800px){.brief{grid-template-columns:1fr}}
+.brief p{margin:6px 0 0;color:var(--ink2);max-width:62ch}
+.picks{display:flex;flex-direction:column;gap:8px}
+.pick{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:10px;background:var(--sunk);border:0;text-align:left;color:var(--ink);font-size:14px;width:100%}
+.pick b{flex:1;min-width:0}
+.pick .num{font-size:13px;color:var(--ink2)}
+
+/* verdict pills */
+.v{display:inline-flex;align-items:center;gap:6px;font:700 12.5px var(--body);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.v svg{width:13px;height:13px}
+.v.apply{background:var(--apply-soft);color:var(--apply)}
+.v.listing{background:var(--listing-soft);color:var(--listing)}
+.v.wait{background:var(--wait-soft);color:var(--wait)}
+.v.avoid{background:var(--avoid-soft);color:var(--avoid)}
+
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.seg{display:flex;background:var(--sunk);border-radius:10px;padding:3px;gap:2px}
+.seg button{border:0;background:transparent;color:var(--ink2);font:600 13.5px var(--body);padding:7px 12px;border-radius:8px}
+.seg button[aria-pressed="true"]{background:var(--panel);color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.12)}
+.seg .c{font:500 11.5px var(--mono);color:var(--ink3);margin-left:4px}
+
+/* ipo cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+@media (max-width:400px){.grid{grid-template-columns:1fr}}
+.ipo{background:var(--panel);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;overflow:hidden}
+.ipo .top{padding:14px 16px 12px;display:flex;flex-direction:column;gap:10px;border-top:4px solid var(--line)}
+.ipo.apply .top{border-top-color:var(--apply)} .ipo.listing .top{border-top-color:var(--listing)}
+.ipo.wait .top{border-top-color:var(--wait)} .ipo.avoid .top{border-top-color:var(--avoid)}
+.head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.head .name{font:700 19px/1.15 var(--display)}
+.head .sub{font-size:12.5px;color:var(--ink3);margin-top:2px}
+.gmprow{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:end}
+.gmp{font:600 30px/1 var(--mono);letter-spacing:-.02em}
+.gmp.pos{color:var(--apply)} .gmp.neg{color:var(--avoid)} .gmp.nil{color:var(--ink3)}
+.gmpmeta{font-size:12.5px;color:var(--ink2);display:flex;flex-direction:column;gap:1px}
+.gmpnote{grid-column:1/-1;font-size:12px;color:var(--ink3)}
+.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts div{background:var(--panel);padding:8px 12px;display:flex;flex-direction:column;gap:1px;min-width:0}
+.facts small{font-size:11px;color:var(--ink3);text-transform:uppercase;letter-spacing:.06em}
+.facts b{font:500 13.5px var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.body{padding:12px 16px 16px;display:flex;flex-direction:column;gap:12px}
+.dates{display:flex;gap:0;font-size:12px}
+.dates div{flex:1;border-top:3px solid var(--bar-track);padding-top:5px;display:flex;flex-direction:column;min-width:0}
+.dates div.done{border-top-color:var(--ink3)} .dates div.now{border-top-color:var(--accent)}
+.dates small{color:var(--ink3);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
+.dates b{font:500 12.5px var(--mono)}
+.subs{display:flex;flex-direction:column;gap:6px}
+.subs .hdr{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.sb{display:grid;grid-template-columns:54px 1fr 58px;gap:8px;align-items:center;font-size:12.5px}
+.sb .track{position:relative;height:10px;background:var(--bar-track);border-radius:3px}
+.sb .fill{position:absolute;left:0;top:0;bottom:0;background:var(--bar);border-radius:0 4px 4px 0}
+.sb .one{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--ink)}
+.sb .x{text-align:right;font:500 12.5px var(--mono)}
+.sb.total .fill{background:var(--ink)}
+.scale{display:grid;grid-template-columns:54px 1fr 58px;gap:8px;font:500 10.5px var(--mono);color:var(--ink3)}
+.scale span{display:flex;justify-content:space-between}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:460px){.why{grid-template-columns:1fr}}
+.why ul{margin:6px 0 0;padding-left:18px;font-size:13.5px;color:var(--ink2);display:flex;flex-direction:column;gap:4px}
+details{border-top:1px solid var(--line);padding-top:10px}
+details summary{cursor:pointer;font-weight:600;font-size:13.5px;color:var(--ink2)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--ink3);font-size:11.5px;text-transform:uppercase;letter-spacing:.05em}
+td.num,th.num{text-align:right}
+.tablewrap{overflow-x:auto}
+.score{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink2)}
+.pips{display:flex;gap:3px}
+.pips i{width:12px;height:6px;border-radius:2px;background:var(--bar-track)}
+.pips i.on{background:var(--ink2)}
+.sources{font-size:12px;color:var(--ink3);display:flex;flex-wrap:wrap;gap:4px 10px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.rubric{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;font-size:13.5px;color:var(--ink2)}
+.rubric ul{margin:4px 0 0;padding-left:18px}
+.disclaimer{font-size:12.5px;color:var(--ink3);max-width:80ch}
+.empty{padding:40px 16px;text-align:center;color:var(--ink3);background:var(--panel);border:1px dashed var(--line);border-radius:14px}
+.hist{display:flex;flex-direction:column;gap:8px}
+.hist details{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--panel)}
+.hist details p{margin:8px 0 0;color:var(--ink2);font-size:14px}
+
+.banner{background:var(--wait-soft);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:14px}
+.delta{font:500 12px var(--mono)}
+.delta.up{color:var(--apply)} .delta.down{color:var(--avoid)}
+.health{font-size:12px;color:var(--ink3);display:flex;flex-wrap:wrap;gap:4px 12px}
+.health .bad{color:var(--avoid)}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h3>India · Mainboard &amp; SME</h3>
+      <h1>IPO Radar</h1>
+    </div>
+    <div class="stamp">
+      <span class="live" id="liveState"><i></i><span id="updatedAt">Loading…</span></span>
+      <span>Rebuilt every morning at 8:50 AM IST</span>
+    </div>
+  </header>
+
+  <div class="banner" id="banner" hidden></div>
+  <section class="brief" id="brief" aria-label="Today's report"></section>
+
+  <section style="display:flex;flex-direction:column;gap:14px" aria-label="IPOs">
+    <div class="filters">
+      <div class="seg" role="group" aria-label="Status" id="statusSeg"></div>
+      <div class="seg" role="group" aria-label="Board" id="boardSeg"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="panel" aria-label="How verdicts are decided">
+    <h2>How the verdict is decided</h2>
+    <div class="rubric">
+      <div><b>Grey market premium</b><ul><li>30% or more: +3</li><li>15–30%: +2</li><li>5–15%: +1</li><li>Below 0%: −2</li></ul></div>
+      <div><b>Subscription (latest day)</b><ul><li>QIB 10x+: +2, QIB 2x+: +1</li><li>Total 20x+: +2, 5x+: +1</li><li>Under 1x on the last day: −1</li><li>QIBs usually bid on the last day, so early days count less</li></ul></div>
+      <div><b>Business &amp; price</b><ul><li>Revenue and profit growing: +1</li><li>Reasonable P/E (under ~25): +1; very rich (over 40): −1</li><li>Loss-making: −2</li><li>Mostly offer-for-sale or heavy debt: −1</li></ul></div>
+      <div><b>Verdict</b><ul><li><b>Apply</b>: 5 or more</li><li><b>Listing gains only</b>: 3–4, sell on listing day</li><li><b>Wait</b>: 1–2, decide after final-day QIB numbers</li><li><b>Avoid</b>: 0 or less</li><li>SME issues need a higher bar and are marked high-risk</li></ul></div>
+    </div>
+    <p class="disclaimer">GMP is an unofficial, unregulated grey-market quote. It changes quickly, differs between sources, and is not a guarantee of the listing price. This page is research to help you decide; it is not investment advice, and the verdicts are produced by a fixed checklist, not by a SEBI-registered adviser.</p>
+  </section>
+
+  <section class="panel" aria-label="Past reports">
+    <h2>Past reports</h2>
+    <div class="hist" id="hist"></div>
+    <div class="health" id="health"></div>
+  </section>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const VERDICT={
+  apply:{t:"Apply",i:'<path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>'},
+  listing:{t:"Listing gains only",i:'<path d="M3 11l3.5-3.5 2.5 2.5L13 5M9.5 5H13v3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'},
+  wait:{t:"Wait",i:'<circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 5v3.3l2 1.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'},
+  avoid:{t:"Avoid",i:'<circle cx="8" cy="8" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4.2 11.8l7.6-7.6" stroke="currentColor" stroke-width="2"/>'}
+};
+const vPill=v=>{const d=VERDICT[v]||VERDICT.wait;return`<span class="v ${v}"><svg viewBox="0 0 16 16" aria-hidden="true">${d.i}</svg>${d.t}</span>`;};
+const inr=n=>n==null||n===""?"—":"₹"+Number(n).toLocaleString("en-IN",{maximumFractionDigits:2});
+const cr=n=>n==null?"—":"₹"+Number(n).toLocaleString("en-IN",{maximumFractionDigits:2})+" Cr";
+const dt=s=>{if(!s)return"—";const d=new Date(s+"T00:00:00+05:30");return d.toLocaleDateString("en-IN",{weekday:"short",day:"numeric",month:"short",timeZone:"Asia/Kolkata"});};
+const todayIST=()=>new Date(new Date().toLocaleString("en-US",{timeZone:"Asia/Kolkata"})).toISOString().slice(0,10);
+
+let ipos=[],reports=[],status="open",board="all";
+
+function statusOf(x){
+  const t=todayIST();
+  if(x.listing&&t>=x.listing)return"listed";
+  if(x.close&&t>x.close)return"closed";
+  if(x.open&&t<x.open)return"upcoming";
+  return"open";
+}
+const STATUS={open:"Open now",upcoming:"Upcoming",closed:"Closed · awaiting listing",listed:"Listed"};
+
+function subsBlock(s){
+  if(!s||s.total==null)return`<div class="subs"><div class="hdr"><h3>Subscription</h3><span class="muted" style="font-size:12px">Not open yet</span></div></div>`;
+  const rows=[["QIB",s.qib],["NII",s.nii],["Retail",s.retail],["Total",s.total]].filter(r=>r[1]!=null);
+  const max=Math.max(2,...rows.map(r=>r[1]));
+  const scaleMax=max<=2?2:max<=5?5:max<=10?10:max<=25?25:max<=50?50:max<=100?100:Math.ceil(max/100)*100;
+  const pct=v=>Math.min(100,v/scaleMax*100);
+  return`<div class="subs"><div class="hdr"><h3>Subscription</h3><span class="muted" style="font-size:12px">${esc(s.day||"")}${s.asOf?" · "+esc(s.asOf):""}</span></div>
+    ${rows.map(([k,v])=>`<div class="sb ${k==="Total"?"total":""}" title="${k}: ${v}x"><span>${k}</span><span class="track"><span class="fill" style="width:${pct(v)}%"></span><span class="one" style="left:${pct(1)}%" title="1x = fully subscribed"></span></span><span class="x">${Number(v).toFixed(2)}x</span></div>`).join("")}
+    <div class="scale"><span></span><span><span>0</span><span>1x mark</span><span>${scaleMax}x</span></span><span></span></div></div>`;
+}
+function datesBlock(x){
+  const t=todayIST(),steps=[["Opens",x.open],["Closes",x.close],["Allotment",x.allot],["Listing",x.listing]];
+  let nowIdx=-1;steps.forEach((s,i)=>{if(s[1]&&t>=s[1])nowIdx=i;});
+  return`<div class="dates">${steps.map((s,i)=>`<div class="${i<nowIdx?"done":i===nowIdx?"now":""}"><small>${s[0]}</small><b>${dt(s[1])}</b></div>`).join("")}</div>`;
+}
+function deltaHtml(x){
+  const v=x.gmp&&x.gmp.value,p=x.gmpPrev;
+  if(v==null||p==null||v===p)return"";
+  return`<span class="delta ${v>p?"up":"down"}" style="grid-column:1/-1">${v>p?"▲":"▼"} ₹${Math.abs(v-p)} since the previous report (was ₹${p})</span>`;
+}
+function card(x){
+  const g=x.gmp||{},price=x.priceHigh||x.priceLow;
+  const pct=g.value!=null&&price?g.value/price*100:null;
+  const cls=g.value==null?"nil":g.value>=0?"pos":"neg";
+  const f=x.fin||{};
+  const finRows=[["Revenue",f.revenue!=null?cr(f.revenue):null,f.revenuePrev!=null?cr(f.revenuePrev):null],["Profit after tax",f.pat!=null?cr(f.pat):null,f.patPrev!=null?cr(f.patPrev):null]].filter(r=>r[1]);
+  return`<article class="ipo ${esc(x.verdict)}" id="ipo-${esc(x.id)}">
+    <div class="top">
+      <div class="head"><div><div class="name">${esc(x.name)}</div><div class="sub">${esc(x.board||"Mainboard")} · ${esc(x.business||"")}</div></div>${vPill(x.verdict)}</div>
+      <div class="gmprow">
+        <span class="gmp num ${cls}">${g.value==null?"No GMP":(g.value>=0?"+":"−")+"₹"+Math.abs(g.value)}</span>
+        <span class="gmpmeta">${pct!=null?`<span class="num"><b>${pct>=0?"+":""}${pct.toFixed(1)}%</b> over ${inr(price)}</span><span>Est. listing <b class="num">${inr(price+g.value)}</b></span>`:`<span>Grey market not quoting yet</span>`}</span>
+        ${deltaHtml(x)}<span class="gmpnote">${g.range?`Sources range ₹${g.range[0]}–₹${g.range[1]} · `:""}${g.asOf?esc(g.asOf):""}</span>
+      </div>
+    </div>
+    <div class="facts">
+      <div><small>Price band</small><b>${x.priceLow&&x.priceHigh&&x.priceLow!==x.priceHigh?`₹${x.priceLow}–${x.priceHigh}`:inr(price)}</b></div>
+      <div><small>Lot size</small><b>${x.lot?x.lot+" shares":"—"}</b></div>
+      <div><small>Min. investment</small><b>${x.minInvest?inr(x.minInvest):x.lot&&price?inr(x.lot*price):"—"}</b></div>
+      <div><small>Issue size</small><b>${cr(x.sizeCr)}</b></div>
+    </div>
+    <div class="body">
+      ${datesBlock(x)}
+      ${subsBlock(x.subs)}
+      <div class="score">Score <span class="num"><b>${x.score??"—"}</b>/10</span><span class="pips" aria-hidden="true">${Array.from({length:10},(_,i)=>`<i class="${x.score!=null&&i<Math.max(0,x.score)?"on":""}"></i>`).join("")}</span></div>
+      <p style="margin:0;color:var(--ink2);font-size:14px">${esc(x.summary||"")}</p>
+      <div class="why">
+        <div><h3>For</h3><ul>${(x.reasons||[]).map(r=>`<li>${esc(r)}</li>`).join("")||"<li>—</li>"}</ul></div>
+        <div><h3>Against</h3><ul>${(x.risks||[]).map(r=>`<li>${esc(r)}</li>`).join("")||"<li>—</li>"}</ul></div>
+      </div>
+      <details><summary>Financials and issue details</summary>
+        <div class="tablewrap" style="margin-top:8px"><table>
+          ${finRows.length?`<tr><th></th><th class="num">${esc(f.fy||"Latest")}</th><th class="num">${esc(f.fyPrev||"Previous")}</th></tr>${finRows.map(r=>`<tr><td>${r[0]}</td><td class="num">${r[1]}</td><td class="num">${r[2]||"—"}</td></tr>`).join("")}`:""}
+          ${f.pe!=null?`<tr><td>P/E</td><td class="num" colspan="2">${f.pe}x${f.peNote?` <span class="muted">(${esc(f.peNote)})</span>`:""}</td></tr>`:""}
+          ${f.other?`<tr><td>Other</td><td colspan="2">${esc(f.other)}</td></tr>`:""}
+          <tr><td>Fresh issue</td><td class="num" colspan="2">${x.freshCr!=null?cr(x.freshCr):"—"}</td></tr>
+          <tr><td>Offer for sale</td><td class="num" colspan="2">${x.ofsCr!=null?cr(x.ofsCr):"—"}</td></tr>
+        </table></div>
+        ${x.sources&&x.sources.length?`<div class="sources" style="margin-top:8px">Sources: ${x.sources.map(s=>`<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join("")}</div>`:""}
+      </details>
+    </div>
+  </article>`;
+}
+function renderBrief(){
+  const r=reports[0];
+  if(!r){$("brief").innerHTML=`<div><h2>No report yet</h2><p>The first daily report will appear here after the next scheduled run.</p></div>`;return;}
+  const by=id=>ipos.find(x=>x.id===id);
+  const row=(id)=>{const x=by(id);if(!x)return"";const g=x.gmp||{},p=x.priceHigh||x.priceLow;
+    return`<button class="pick" data-go="${esc(id)}"><b>${esc(x.name)}</b><span class="num">${g.value!=null&&p?(g.value>=0?"+":"")+(g.value/p*100).toFixed(0)+"% GMP":"no GMP"}</span>${vPill(x.verdict)}</button>`;};
+  $("brief").innerHTML=`<div><h3>Report · ${esc(dt(r.date))}</h3><h2 style="margin-top:6px">${esc(r.headline)}</h2><p>${esc(r.summary)}</p>${r.note?`<p class="muted" style="font-size:13px">${esc(r.note)}</p>`:""}</div>
+    <div class="picks"><h3>Today's calls</h3>${[...(r.apply||[]),...(r.listing||[]),...(r.wait||[]),...(r.avoid||[])].map(row).join("")}</div>`;
+}
+function renderFilters(){
+  const counts={};for(const x of ipos){const s=statusOf(x);counts[s]=(counts[s]||0)+1;}
+  $("statusSeg").innerHTML=["open","upcoming","closed","listed"].map(s=>`<button data-s="${s}" aria-pressed="${s===status}">${STATUS[s].split(" ·")[0]}<span class="c">${counts[s]||0}</span></button>`).join("");
+  $("boardSeg").innerHTML=[["all","All"],["Mainboard","Mainboard"],["SME","SME"]].map(([k,v])=>`<button data-b="${k}" aria-pressed="${k===board}">${v}</button>`).join("");
+}
+const ORDER={apply:0,listing:1,wait:2,avoid:3};
+function renderGrid(){
+  const list=ipos.filter(x=>statusOf(x)===status&&(board==="all"||(x.board||"Mainboard").startsWith(board)))
+    .sort((a,b)=>(ORDER[a.verdict]??9)-(ORDER[b.verdict]??9)||(b.score??0)-(a.score??0));
+  $("grid").innerHTML=list.length?list.map(card).join(""):`<div class="empty">No ${STATUS[status].toLowerCase()} IPOs${board!=="all"?" on "+board:""} right now.</div>`;
+}
+function renderHist(){
+  $("hist").innerHTML=reports.length>1?reports.slice(1,15).map(r=>`<details><summary>${esc(dt(r.date))} · ${esc(r.headline)}</summary><p>${esc(r.summary)}</p></details>`).join(""):`<p class="muted" style="margin:0">Earlier reports will collect here day by day.</p>`;
+}
+function renderStamp(){
+  const r=reports[0];
+  if(!r){$("updatedAt").textContent="Waiting for first report";return;}
+  $("updatedAt").textContent="Updated "+(r.generatedAt||r.date);
+  $("liveState").classList.toggle("stale",r.date<todayIST());
+}
+function renderAll(){renderStamp();renderBrief();renderFilters();renderGrid();renderHist();}
+document.addEventListener("click",e=>{
+  const s=e.target.closest("[data-s]");if(s){status=s.dataset.s;renderFilters();renderGrid();}
+  const b=e.target.closest("[data-b]");if(b){board=b.dataset.b;renderFilters();renderGrid();}
+  const g=e.target.closest("[data-go]");if(g){const x=ipos.find(i=>i.id===g.dataset.go);if(x){status=statusOf(x);board="all";renderFilters();renderGrid();setTimeout(()=>{const el=$("ipo-"+x.id);el&&el.scrollIntoView({behavior:"smooth",block:"start"});},30);}}
+});
+const DATA=/*__DATA__*/null;
+if(DATA){ipos=DATA.ipos||[];reports=DATA.reports||[];
+  if(!ipos.some(x=>statusOf(x)===status)){const f=["open","upcoming","closed","listed"].find(s=>ipos.some(x=>statusOf(x)===s));if(f)status=f;}
+  const r=reports[0];
+  if(r&&r.note){$("banner").hidden=false;$("banner").textContent=r.note;}
+  else if(r&&r.date<todayIST()){$("banner").hidden=false;$("banner").textContent="Today's update hasn't run yet. Showing the report from "+dt(r.date)+".";}
+  $("health").innerHTML="Data sources today: "+(DATA.health||[]).map(h=>`<span class="${h.ok?"":"bad"}">${esc(h.source)} ${h.ok?"✓":"✗"}</span>`).join("");
+}
+renderAll();
+</script>
+</body>
+</html>

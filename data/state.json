@@ -1,0 +1,751 @@
+{
+ "updated": "2026-09-26 22:09 IST",
+ "ipos": {
+  "moneyview": {
+   "gmp": {
+    "value": 13,
+    "range": [
+     13,
+     14
+    ],
+    "asOf": "26 Sep, 9:00 AM IST · IPO Ji, IPO Watch"
+   },
+   "subs": {
+    "qib": 0.26,
+    "nii": 16.08,
+    "retail": 5.41,
+    "total": 6.22,
+    "day": "Day 2 of 3",
+    "asOf": "25 Sep, 5 PM"
+   },
+   "name": "Moneyview",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 13
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Digital personal loans, payments and investments",
+   "open": "2026-09-24",
+   "close": "2026-09-28",
+   "allot": "2026-09-29",
+   "listing": "2026-10-01",
+   "priceLow": 32,
+   "priceHigh": 34,
+   "lot": 441,
+   "minInvest": 14994,
+   "sizeCr": 1091.68,
+   "freshCr": 750,
+   "ofsCr": 341.7,
+   "fin": {
+    "fy": "FY26",
+    "revenue": 3404.27,
+    "pat": 242.71,
+    "pe": 24.7,
+    "peNote": "on FY26 profit; ~8.6x on annualised Q1 FY27",
+    "growing": true,
+    "extraReasons": [
+     "Q1 FY27 profit up 2.6x, revenue up 50%"
+    ],
+    "extraRisks": [
+     "Unsecured lending: credit losses can rise in a downturn",
+     "Institutional (QIB) bids weak until day 2 (0.26x)"
+    ]
+   },
+   "sources": [
+    {
+     "t": "IPO Ji",
+     "u": "https://www.ipoji.com/ipo/moneyview-ipo"
+    },
+    {
+     "t": "Inc42",
+     "u": "https://inc42.com/buzz/moneyview-ipo-subscribed-3-55x-on-day-2-niis-lead-with-7-77x-subscription/"
+    }
+   ],
+   "id": "moneyview",
+   "status": "open",
+   "score": 6,
+   "verdict": "apply",
+   "reasons": [
+    "Grey market 38% above issue price",
+    "Subscribed 6.22x overall",
+    "Revenue and profit growing",
+    "Reasonably priced at 24.7x earnings",
+    "Q1 FY27 profit up 2.6x, revenue up 50%"
+   ],
+   "risks": [
+    "Unsecured lending: credit losses can rise in a downturn",
+    "Institutional (QIB) bids weak until day 2 (0.26x)"
+   ],
+   "summary": "Strong on the checklist. Worth applying."
+  },
+  "orient-cables": {
+   "gmp": {
+    "value": 80,
+    "range": [
+     80,
+     85
+    ],
+    "asOf": "26 Sep · IPO Ji, IPO Watch, ETV Bharat, IPO Premium"
+   },
+   "subs": {
+    "qib": 0.01,
+    "nii": 3.68,
+    "retail": 2.6,
+    "total": 2.09,
+    "day": "Day 1 of 3",
+    "asOf": "25 Sep"
+   },
+   "name": "Orient Cables (India)",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 80
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Networking cables for broadband, telecom and data centres",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "allot": "2026-09-30",
+   "listing": "2026-10-05",
+   "priceLow": 258,
+   "priceHigh": 272,
+   "lot": 55,
+   "minInvest": 14960,
+   "sizeCr": 552,
+   "freshCr": 320,
+   "ofsCr": 232,
+   "fin": {
+    "fy": "FY26",
+    "fyPrev": "FY25",
+    "revenue": 1181.67,
+    "revenuePrev": 831.86,
+    "pat": 53.56,
+    "pe": 51.81,
+    "peNote": "pre-IPO",
+    "growing": true,
+    "other": "RoNW 25.8%; promoters hold ~90% before the IPO",
+    "extraRisks": [
+     "42% of the issue is existing owners selling"
+    ]
+   },
+   "sources": [
+    {
+     "t": "IPO Premium",
+     "u": "https://www.ipopremium.in/view/ipo/1383/orient-cables"
+    },
+    {
+     "t": "ETV Bharat",
+     "u": "https://www.etvbharat.com/en/business/ipo-alert-orient-cables-runwal-enterprises-acevector-german-green-steel-gmp-signals-potential-listing-gains-enn26092602263"
+    }
+   ],
+   "id": "orient-cables",
+   "status": "open",
+   "score": 2,
+   "verdict": "wait",
+   "reasons": [
+    "Grey market 29% above issue price",
+    "Revenue and profit growing"
+   ],
+   "risks": [
+    "Expensive at 51.81x earnings",
+    "42% of the issue is existing owners selling"
+   ],
+   "summary": "Mixed signals. Decide on the last day after the institutional (QIB) numbers are in."
+  },
+  "german-green-steel": {
+   "gmp": {
+    "value": 25,
+    "range": [
+     20,
+     28
+    ],
+    "asOf": "26 Sep · IPO Ji, IPO Watch, ETV Bharat"
+   },
+   "subs": {
+    "retail": 1.12,
+    "total": 1,
+    "day": "Day 1 of 3 (reported fully subscribed)",
+    "asOf": "25 Sep"
+   },
+   "name": "German Green Steel and Power",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 25
+    }
+   ],
+   "board": "Mainboard",
+   "business": "TMT bars, billets and sponge iron (Gujarat)",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "allot": "2026-09-30",
+   "listing": "2026-10-05",
+   "priceLow": 132,
+   "priceHigh": 139,
+   "lot": 107,
+   "minInvest": 14873,
+   "sizeCr": 303.9,
+   "freshCr": 290,
+   "ofsCr": 13.9,
+   "fin": {
+    "fy": "FY26",
+    "fyPrev": "FY25",
+    "revenue": 1685.38,
+    "revenuePrev": 1517.21,
+    "pat": 79.89,
+    "patPrev": 59.94,
+    "pe": 13.11,
+    "peNote": "post-IPO",
+    "growing": true,
+    "other": "Price to book 1.79x; promoters 68.5% after IPO",
+    "extraRisks": [
+     "Steel is cyclical: prices swing with the market"
+    ]
+   },
+   "sources": [
+    {
+     "t": "Chittorgarh",
+     "u": "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/"
+    },
+    {
+     "t": "Zee Business",
+     "u": "https://www.zeebiz.com/markets/ipo/news-german-green-steel-ipo-fully-subscribed-on-day-1-retail-portion-at-112x-402862"
+    }
+   ],
+   "id": "german-green-steel",
+   "status": "open",
+   "score": 4,
+   "verdict": "listing",
+   "reasons": [
+    "Grey market 18% above issue price",
+    "Revenue and profit growing",
+    "Reasonably priced at 13.11x earnings"
+   ],
+   "risks": [
+    "Steel is cyclical: prices swing with the market"
+   ],
+   "summary": "Good for a listing-day trade; sell on listing rather than holding."
+  },
+  "srit-india": {
+   "gmp": {
+    "value": 32,
+    "range": [
+     26,
+     32
+    ],
+    "asOf": "26 Sep · IPO Ji, IPO Watch, IPO Premium"
+   },
+   "name": "SRIT India",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 32
+    }
+   ],
+   "board": "Mainboard",
+   "business": "IT systems integration for government and enterprises",
+   "open": "2026-09-28",
+   "close": "2026-09-30",
+   "allot": "2026-10-01",
+   "listing": "2026-10-06",
+   "priceLow": 123,
+   "priceHigh": 130,
+   "lot": 115,
+   "minInvest": 14950,
+   "sizeCr": 218.4,
+   "freshCr": 218.4,
+   "ofsCr": 0,
+   "fin": {
+    "fy": "FY26",
+    "revenue": 462.54,
+    "pat": 43.29,
+    "pe": 14.25,
+    "peNote": "pre-IPO",
+    "other": "RoNW 30.2%; order book ₹1,280 Cr",
+    "extraRisks": [
+     "Depends heavily on government contracts"
+    ]
+   },
+   "sources": [
+    {
+     "t": "IPO Premium",
+     "u": "https://www.ipopremium.in/view/ipo/1392/srit-india-ltd"
+    }
+   ],
+   "id": "srit-india",
+   "status": "upcoming",
+   "score": 3,
+   "verdict": "listing",
+   "reasons": [
+    "Grey market 25% above issue price",
+    "Reasonably priced at 14.25x earnings"
+   ],
+   "risks": [
+    "Depends heavily on government contracts"
+   ],
+   "summary": "Good for a listing-day trade; sell on listing rather than holding."
+  },
+  "a-one-steels": {
+   "gmp": {
+    "value": 38,
+    "range": [
+     38,
+     51
+    ],
+    "asOf": "26 Sep · IPO Ji, IPO Watch"
+   },
+   "subs": {
+    "total": 0.8,
+    "day": "Day 2 of 3 (reported ~80%)",
+    "asOf": "25 Sep"
+   },
+   "name": "A-One Steels India",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 38
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Integrated steel: TMT bars, coils, pipes (Karnataka, AP)",
+   "open": "2026-09-24",
+   "close": "2026-09-28",
+   "allot": "2026-09-29",
+   "listing": "2026-10-01",
+   "priceLow": 385,
+   "priceHigh": 405,
+   "lot": 37,
+   "minInvest": 14985,
+   "sizeCr": 405,
+   "freshCr": 355.2,
+   "ofsCr": 50,
+   "fin": {
+    "fy": "FY26",
+    "revenue": 4202,
+    "pat": 127.41,
+    "pe": 24.55,
+    "peNote": "post-IPO",
+    "growing": true,
+    "other": "EBITDA margin 7.3%; promoters 74.5% after IPO",
+    "extraRisks": [
+     "Profit jumped 15x from a very low base; hard to tell if it lasts",
+     "Thin margins in a cyclical sector",
+     "Demand weak so far (about 0.8x after day 2)"
+    ]
+   },
+   "sources": [
+    {
+     "t": "Chittorgarh",
+     "u": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/"
+    },
+    {
+     "t": "Whalesbook",
+     "u": "https://www.whalesbook.com/news/English/ipo/A-One-Steels-IPO-Reaches-80percent-Subscription-on-Day-2/6ab613d05aacb956d08024f8"
+    }
+   ],
+   "id": "a-one-steels",
+   "status": "open",
+   "score": 3,
+   "verdict": "listing",
+   "reasons": [
+    "Modest grey market premium (9%)",
+    "Revenue and profit growing",
+    "Reasonably priced at 24.55x earnings"
+   ],
+   "risks": [
+    "Profit jumped 15x from a very low base; hard to tell if it lasts",
+    "Thin margins in a cyclical sector",
+    "Demand weak so far (about 0.8x after day 2)"
+   ],
+   "summary": "Good for a listing-day trade; sell on listing rather than holding."
+  },
+  "runwal-enterprises": {
+   "gmp": {
+    "value": 16,
+    "range": [
+     14,
+     30
+    ],
+    "asOf": "26 Sep · IPO Ji, IPO Watch, ETV Bharat"
+   },
+   "subs": {
+    "qib": 1.01,
+    "retail": 0.19,
+    "total": 0.44,
+    "day": "Day 1 of 3",
+    "asOf": "25 Sep"
+   },
+   "name": "Runwal Enterprises",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 16
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Mumbai real estate developer",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "allot": "2026-09-30",
+   "listing": "2026-10-05",
+   "priceLow": 290,
+   "priceHigh": 305,
+   "lot": 49,
+   "minInvest": 14945,
+   "sizeCr": 499.83,
+   "freshCr": 499.83,
+   "ofsCr": 0,
+   "fin": {
+    "fy": "FY26",
+    "fyPrev": "FY25",
+    "revenue": 1850.79,
+    "revenuePrev": 1050.71,
+    "pat": 250.74,
+    "growing": true,
+    "heavyDebt": true,
+    "other": "Debt ₹2,909 Cr; RoNW 27.2%",
+    "extraRisks": [
+     "Cash from operations is negative",
+     "All projects in one region (Mumbai)"
+    ]
+   },
+   "sources": [
+    {
+     "t": "IPO Index",
+     "u": "https://ipoindex.in/ipo/runwal-enterprises-ipo/"
+    }
+   ],
+   "id": "runwal-enterprises",
+   "status": "open",
+   "score": 1,
+   "verdict": "wait",
+   "reasons": [
+    "Modest grey market premium (5%)",
+    "Revenue and profit growing"
+   ],
+   "risks": [
+    "High debt",
+    "Cash from operations is negative",
+    "All projects in one region (Mumbai)"
+   ],
+   "summary": "Mixed signals. Decide on the last day after the institutional (QIB) numbers are in."
+  },
+  "shah-investors-home": {
+   "gmp": {
+    "value": 9,
+    "range": [
+     9,
+     12
+    ],
+    "asOf": "26 Sep · IPO Premium, IPO Ji, IPO Watch"
+   },
+   "name": "Shah Investor's Home",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 9
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Stock broking and mutual fund distribution (Gujarat, Mumbai)",
+   "open": "2026-09-28",
+   "close": "2026-09-30",
+   "allot": "2026-10-01",
+   "listing": "2026-10-06",
+   "priceLow": 159,
+   "priceHigh": 167,
+   "lot": 85,
+   "minInvest": 14195,
+   "sizeCr": 90.16,
+   "freshCr": 90.16,
+   "ofsCr": 0,
+   "fin": {
+    "fy": "FY26",
+    "revenue": 72.4,
+    "pat": 13.1,
+    "pe": 19.9,
+    "peNote": "on FY26 EPS ₹8.38",
+    "other": "RoNW only 7.35%",
+    "extraRisks": [
+     "Low return on equity",
+     "Broking income falls when markets are quiet",
+     "Small issue (₹90 Cr)"
+    ]
+   },
+   "sources": [
+    {
+     "t": "IPO Premium",
+     "u": "https://www.ipopremium.in/view/ipo/1390/shah-investors-home-ltd"
+    }
+   ],
+   "id": "shah-investors-home",
+   "status": "upcoming",
+   "score": 2,
+   "verdict": "wait",
+   "reasons": [
+    "Modest grey market premium (5%)",
+    "Reasonably priced at 19.9x earnings"
+   ],
+   "risks": [
+    "Low return on equity",
+    "Broking income falls when markets are quiet",
+    "Small issue (₹90 Cr)"
+   ],
+   "summary": "Mixed signals. Decide on the last day after the institutional (QIB) numbers are in."
+  },
+  "acevector": {
+   "gmp": {
+    "value": 2,
+    "asOf": "26 Sep · IPO Ji, IPO Watch, ETV Bharat"
+   },
+   "subs": {
+    "qib": 0,
+    "nii": 0.42,
+    "retail": 0.62,
+    "total": 0.23,
+    "day": "Day 1 of 3",
+    "asOf": "25 Sep, close"
+   },
+   "name": "Acevector",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 2
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Snapdeal marketplace, Unicommerce SaaS and brands",
+   "open": "2026-09-25",
+   "close": "2026-09-29",
+   "allot": "2026-09-30",
+   "listing": "2026-10-05",
+   "priceLow": 30,
+   "priceHigh": 32,
+   "lot": 468,
+   "minInvest": 14976,
+   "sizeCr": 420,
+   "freshCr": 287,
+   "ofsCr": 133,
+   "fin": {
+    "fy": "FY26",
+    "fyPrev": "FY25",
+    "revenue": 537.67,
+    "revenuePrev": 406.77,
+    "pat": -45.51,
+    "patPrev": -126.31,
+    "loss": true,
+    "other": "Price to sales 3.4x",
+    "extraReasons": [
+     "Losses narrowing; Unicommerce is profitable"
+    ],
+    "extraRisks": [
+     "Brokerages (SBI Securities, BP Equities, Swastika) say avoid",
+     "Tough competition from Meesho, Flipkart, Amazon"
+    ]
+   },
+   "sources": [
+    {
+     "t": "Business Today",
+     "u": "https://www.businesstoday.in/markets/ipo-corner/story/snapdeal-parent-acevector-ipo-opens-should-you-apply-or-avoid-check-price-band-reviews-latest-gmp-more-557736-2026-09-25"
+    }
+   ],
+   "id": "acevector",
+   "status": "open",
+   "score": -1,
+   "verdict": "avoid",
+   "reasons": [
+    "Modest grey market premium (6%)",
+    "Losses narrowing; Unicommerce is profitable"
+   ],
+   "risks": [
+    "Company is loss-making",
+    "Brokerages (SBI Securities, BP Equities, Swastika) say avoid",
+    "Tough competition from Meesho, Flipkart, Amazon"
+   ],
+   "summary": "Weak on the checklist. Skip unless you have your own strong view."
+  },
+  "adroit-industries": {
+   "gmp": {
+    "value": 47,
+    "asOf": "IPO Watch"
+   },
+   "subs": {
+    "total": 176.85,
+    "day": "Final",
+    "asOf": "25 Sep"
+   },
+   "name": "Adroit Industries",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 47
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Auto-component propeller shafts",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "allot": "2026-09-28",
+   "listing": "2026-09-30",
+   "priceLow": 126,
+   "priceHigh": 134,
+   "lot": 111,
+   "sizeCr": 150.71,
+   "sources": [
+    {
+     "t": "Business Today",
+     "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+    }
+   ],
+   "id": "adroit-industries",
+   "status": "closed",
+   "score": 5,
+   "verdict": "apply",
+   "reasons": [
+    "Grey market 35% above issue price",
+    "Oversubscribed 176.85x overall"
+   ],
+   "risks": [
+    "No financials on file: verdict uses grey market and demand only"
+   ],
+   "summary": "Bidding closed. If you were allotted, a listing gain looks likely."
+  },
+  "elevate-campuses": {
+   "gmp": {
+    "value": 4,
+    "asOf": "IPO Watch"
+   },
+   "subs": {
+    "total": 1.79,
+    "day": "Final",
+    "asOf": "25 Sep"
+   },
+   "name": "Elevate Campuses",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 4
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Education infrastructure",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "allot": "2026-09-28",
+   "listing": "2026-09-30",
+   "priceLow": 343,
+   "priceHigh": 362,
+   "lot": 41,
+   "sizeCr": 2100,
+   "sources": [
+    {
+     "t": "Business Today",
+     "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+    }
+   ],
+   "id": "elevate-campuses",
+   "status": "closed",
+   "score": 0,
+   "verdict": "avoid",
+   "reasons": [],
+   "risks": [
+    "Grey market almost flat (1%)",
+    "No financials on file: verdict uses grey market and demand only"
+   ],
+   "summary": "Bidding closed. If you were allotted, don't expect much of a listing gain."
+  },
+  "swastika-infra": {
+   "gmp": {
+    "value": 5,
+    "asOf": "IPO Watch"
+   },
+   "subs": {
+    "total": 7.6,
+    "day": "Final",
+    "asOf": "25 Sep"
+   },
+   "name": "Swastika Infra",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 5
+    }
+   ],
+   "board": "Mainboard",
+   "business": "Power transmission EPC",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "allot": "2026-09-28",
+   "listing": "2026-09-30",
+   "priceLow": 175,
+   "priceHigh": 185,
+   "lot": 81,
+   "sizeCr": 161,
+   "sources": [
+    {
+     "t": "Business Today",
+     "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+    }
+   ],
+   "id": "swastika-infra",
+   "status": "closed",
+   "score": 1,
+   "verdict": "wait",
+   "reasons": [
+    "Subscribed 7.6x overall"
+   ],
+   "risks": [
+    "Grey market almost flat (3%)",
+    "No financials on file: verdict uses grey market and demand only"
+   ],
+   "summary": "Bidding closed. If you were allotted, don't expect much of a listing gain."
+  },
+  "armee-infotech": {
+   "gmp": {
+    "value": 8,
+    "asOf": "IPO Watch"
+   },
+   "subs": {
+    "total": 2.44,
+    "day": "Final",
+    "asOf": "25 Sep"
+   },
+   "name": "ArMee Infotech",
+   "gmpHistory": [
+    {
+     "d": "2026-09-26",
+     "v": 8
+    }
+   ],
+   "board": "Mainboard",
+   "business": "IT solutions and infrastructure",
+   "open": "2026-09-23",
+   "close": "2026-09-25",
+   "allot": "2026-09-28",
+   "listing": "2026-09-30",
+   "priceLow": 350,
+   "priceHigh": 375,
+   "lot": 40,
+   "sizeCr": 300,
+   "sources": [
+    {
+     "t": "Business Today",
+     "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+    }
+   ],
+   "id": "armee-infotech",
+   "status": "closed",
+   "score": 0,
+   "verdict": "avoid",
+   "reasons": [],
+   "risks": [
+    "Grey market almost flat (2%)",
+    "No financials on file: verdict uses grey market and demand only"
+   ],
+   "summary": "Bidding closed. If you were allotted, don't expect much of a listing gain."
+  }
+ }
+}

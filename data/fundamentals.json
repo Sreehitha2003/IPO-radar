@@ -1,0 +1,383 @@
+{
+ "moneyview": {
+  "name": "Moneyview",
+  "board": "Mainboard",
+  "business": "Digital personal loans, payments and investments",
+  "open": "2026-09-24",
+  "close": "2026-09-28",
+  "allot": "2026-09-29",
+  "listing": "2026-10-01",
+  "priceLow": 32,
+  "priceHigh": 34,
+  "lot": 441,
+  "minInvest": 14994,
+  "sizeCr": 1091.68,
+  "freshCr": 750,
+  "ofsCr": 341.7,
+  "fin": {
+   "fy": "FY26",
+   "revenue": 3404.27,
+   "pat": 242.71,
+   "pe": 24.7,
+   "peNote": "on FY26 profit; ~8.6x on annualised Q1 FY27",
+   "growing": true,
+   "extraReasons": [
+    "Q1 FY27 profit up 2.6x, revenue up 50%"
+   ],
+   "extraRisks": [
+    "Unsecured lending: credit losses can rise in a downturn",
+    "Institutional (QIB) bids weak until day 2 (0.26x)"
+   ]
+  },
+  "sources": [
+   {
+    "t": "IPO Ji",
+    "u": "https://www.ipoji.com/ipo/moneyview-ipo"
+   },
+   {
+    "t": "Inc42",
+    "u": "https://inc42.com/buzz/moneyview-ipo-subscribed-3-55x-on-day-2-niis-lead-with-7-77x-subscription/"
+   }
+  ]
+ },
+ "orient-cables": {
+  "name": "Orient Cables (India)",
+  "board": "Mainboard",
+  "business": "Networking cables for broadband, telecom and data centres",
+  "open": "2026-09-25",
+  "close": "2026-09-29",
+  "allot": "2026-09-30",
+  "listing": "2026-10-05",
+  "priceLow": 258,
+  "priceHigh": 272,
+  "lot": 55,
+  "minInvest": 14960,
+  "sizeCr": 552,
+  "freshCr": 320,
+  "ofsCr": 232,
+  "fin": {
+   "fy": "FY26",
+   "fyPrev": "FY25",
+   "revenue": 1181.67,
+   "revenuePrev": 831.86,
+   "pat": 53.56,
+   "pe": 51.81,
+   "peNote": "pre-IPO",
+   "growing": true,
+   "other": "RoNW 25.8%; promoters hold ~90% before the IPO",
+   "extraRisks": [
+    "42% of the issue is existing owners selling"
+   ]
+  },
+  "sources": [
+   {
+    "t": "IPO Premium",
+    "u": "https://www.ipopremium.in/view/ipo/1383/orient-cables"
+   },
+   {
+    "t": "ETV Bharat",
+    "u": "https://www.etvbharat.com/en/business/ipo-alert-orient-cables-runwal-enterprises-acevector-german-green-steel-gmp-signals-potential-listing-gains-enn26092602263"
+   }
+  ]
+ },
+ "german-green-steel": {
+  "name": "German Green Steel and Power",
+  "board": "Mainboard",
+  "business": "TMT bars, billets and sponge iron (Gujarat)",
+  "open": "2026-09-25",
+  "close": "2026-09-29",
+  "allot": "2026-09-30",
+  "listing": "2026-10-05",
+  "priceLow": 132,
+  "priceHigh": 139,
+  "lot": 107,
+  "minInvest": 14873,
+  "sizeCr": 303.9,
+  "freshCr": 290,
+  "ofsCr": 13.9,
+  "fin": {
+   "fy": "FY26",
+   "fyPrev": "FY25",
+   "revenue": 1685.38,
+   "revenuePrev": 1517.21,
+   "pat": 79.89,
+   "patPrev": 59.94,
+   "pe": 13.11,
+   "peNote": "post-IPO",
+   "growing": true,
+   "other": "Price to book 1.79x; promoters 68.5% after IPO",
+   "extraRisks": [
+    "Steel is cyclical: prices swing with the market"
+   ]
+  },
+  "sources": [
+   {
+    "t": "Chittorgarh",
+    "u": "https://www.chittorgarh.com/ipo/german-green-steel-and-power-ipo/2497/"
+   },
+   {
+    "t": "Zee Business",
+    "u": "https://www.zeebiz.com/markets/ipo/news-german-green-steel-ipo-fully-subscribed-on-day-1-retail-portion-at-112x-402862"
+   }
+  ]
+ },
+ "srit-india": {
+  "name": "SRIT India",
+  "board": "Mainboard",
+  "business": "IT systems integration for government and enterprises",
+  "open": "2026-09-28",
+  "close": "2026-09-30",
+  "allot": "2026-10-01",
+  "listing": "2026-10-06",
+  "priceLow": 123,
+  "priceHigh": 130,
+  "lot": 115,
+  "minInvest": 14950,
+  "sizeCr": 218.4,
+  "freshCr": 218.4,
+  "ofsCr": 0,
+  "fin": {
+   "fy": "FY26",
+   "revenue": 462.54,
+   "pat": 43.29,
+   "pe": 14.25,
+   "peNote": "pre-IPO",
+   "other": "RoNW 30.2%; order book ₹1,280 Cr",
+   "extraRisks": [
+    "Depends heavily on government contracts"
+   ]
+  },
+  "sources": [
+   {
+    "t": "IPO Premium",
+    "u": "https://www.ipopremium.in/view/ipo/1392/srit-india-ltd"
+   }
+  ]
+ },
+ "a-one-steels": {
+  "name": "A-One Steels India",
+  "board": "Mainboard",
+  "business": "Integrated steel: TMT bars, coils, pipes (Karnataka, AP)",
+  "open": "2026-09-24",
+  "close": "2026-09-28",
+  "allot": "2026-09-29",
+  "listing": "2026-10-01",
+  "priceLow": 385,
+  "priceHigh": 405,
+  "lot": 37,
+  "minInvest": 14985,
+  "sizeCr": 405,
+  "freshCr": 355.2,
+  "ofsCr": 50,
+  "fin": {
+   "fy": "FY26",
+   "revenue": 4202,
+   "pat": 127.41,
+   "pe": 24.55,
+   "peNote": "post-IPO",
+   "growing": true,
+   "other": "EBITDA margin 7.3%; promoters 74.5% after IPO",
+   "extraRisks": [
+    "Profit jumped 15x from a very low base; hard to tell if it lasts",
+    "Thin margins in a cyclical sector",
+    "Demand weak so far (about 0.8x after day 2)"
+   ]
+  },
+  "sources": [
+   {
+    "t": "Chittorgarh",
+    "u": "https://www.chittorgarh.com/ipo/a-one-steels-ipo/2000/"
+   },
+   {
+    "t": "Whalesbook",
+    "u": "https://www.whalesbook.com/news/English/ipo/A-One-Steels-IPO-Reaches-80percent-Subscription-on-Day-2/6ab613d05aacb956d08024f8"
+   }
+  ]
+ },
+ "runwal-enterprises": {
+  "name": "Runwal Enterprises",
+  "board": "Mainboard",
+  "business": "Mumbai real estate developer",
+  "open": "2026-09-25",
+  "close": "2026-09-29",
+  "allot": "2026-09-30",
+  "listing": "2026-10-05",
+  "priceLow": 290,
+  "priceHigh": 305,
+  "lot": 49,
+  "minInvest": 14945,
+  "sizeCr": 499.83,
+  "freshCr": 499.83,
+  "ofsCr": 0,
+  "fin": {
+   "fy": "FY26",
+   "fyPrev": "FY25",
+   "revenue": 1850.79,
+   "revenuePrev": 1050.71,
+   "pat": 250.74,
+   "growing": true,
+   "heavyDebt": true,
+   "other": "Debt ₹2,909 Cr; RoNW 27.2%",
+   "extraRisks": [
+    "Cash from operations is negative",
+    "All projects in one region (Mumbai)"
+   ]
+  },
+  "sources": [
+   {
+    "t": "IPO Index",
+    "u": "https://ipoindex.in/ipo/runwal-enterprises-ipo/"
+   }
+  ]
+ },
+ "shah-investors-home": {
+  "name": "Shah Investor's Home",
+  "board": "Mainboard",
+  "business": "Stock broking and mutual fund distribution (Gujarat, Mumbai)",
+  "open": "2026-09-28",
+  "close": "2026-09-30",
+  "allot": "2026-10-01",
+  "listing": "2026-10-06",
+  "priceLow": 159,
+  "priceHigh": 167,
+  "lot": 85,
+  "minInvest": 14195,
+  "sizeCr": 90.16,
+  "freshCr": 90.16,
+  "ofsCr": 0,
+  "fin": {
+   "fy": "FY26",
+   "revenue": 72.4,
+   "pat": 13.1,
+   "pe": 19.9,
+   "peNote": "on FY26 EPS ₹8.38",
+   "other": "RoNW only 7.35%",
+   "extraRisks": [
+    "Low return on equity",
+    "Broking income falls when markets are quiet",
+    "Small issue (₹90 Cr)"
+   ]
+  },
+  "sources": [
+   {
+    "t": "IPO Premium",
+    "u": "https://www.ipopremium.in/view/ipo/1390/shah-investors-home-ltd"
+   }
+  ]
+ },
+ "acevector": {
+  "name": "Acevector",
+  "board": "Mainboard",
+  "business": "Snapdeal marketplace, Unicommerce SaaS and brands",
+  "open": "2026-09-25",
+  "close": "2026-09-29",
+  "allot": "2026-09-30",
+  "listing": "2026-10-05",
+  "priceLow": 30,
+  "priceHigh": 32,
+  "lot": 468,
+  "minInvest": 14976,
+  "sizeCr": 420,
+  "freshCr": 287,
+  "ofsCr": 133,
+  "fin": {
+   "fy": "FY26",
+   "fyPrev": "FY25",
+   "revenue": 537.67,
+   "revenuePrev": 406.77,
+   "pat": -45.51,
+   "patPrev": -126.31,
+   "loss": true,
+   "other": "Price to sales 3.4x",
+   "extraReasons": [
+    "Losses narrowing; Unicommerce is profitable"
+   ],
+   "extraRisks": [
+    "Brokerages (SBI Securities, BP Equities, Swastika) say avoid",
+    "Tough competition from Meesho, Flipkart, Amazon"
+   ]
+  },
+  "sources": [
+   {
+    "t": "Business Today",
+    "u": "https://www.businesstoday.in/markets/ipo-corner/story/snapdeal-parent-acevector-ipo-opens-should-you-apply-or-avoid-check-price-band-reviews-latest-gmp-more-557736-2026-09-25"
+   }
+  ]
+ },
+ "adroit-industries": {
+  "name": "Adroit Industries",
+  "board": "Mainboard",
+  "business": "Auto-component propeller shafts",
+  "open": "2026-09-23",
+  "close": "2026-09-25",
+  "allot": "2026-09-28",
+  "listing": "2026-09-30",
+  "priceLow": 126,
+  "priceHigh": 134,
+  "lot": 111,
+  "sizeCr": 150.71,
+  "sources": [
+   {
+    "t": "Business Today",
+    "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+   }
+  ]
+ },
+ "elevate-campuses": {
+  "name": "Elevate Campuses",
+  "board": "Mainboard",
+  "business": "Education infrastructure",
+  "open": "2026-09-23",
+  "close": "2026-09-25",
+  "allot": "2026-09-28",
+  "listing": "2026-09-30",
+  "priceLow": 343,
+  "priceHigh": 362,
+  "lot": 41,
+  "sizeCr": 2100,
+  "sources": [
+   {
+    "t": "Business Today",
+    "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+   }
+  ]
+ },
+ "swastika-infra": {
+  "name": "Swastika Infra",
+  "board": "Mainboard",
+  "business": "Power transmission EPC",
+  "open": "2026-09-23",
+  "close": "2026-09-25",
+  "allot": "2026-09-28",
+  "listing": "2026-09-30",
+  "priceLow": 175,
+  "priceHigh": 185,
+  "lot": 81,
+  "sizeCr": 161,
+  "sources": [
+   {
+    "t": "Business Today",
+    "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+   }
+  ]
+ },
+ "armee-infotech": {
+  "name": "ArMee Infotech",
+  "board": "Mainboard",
+  "business": "IT solutions and infrastructure",
+  "open": "2026-09-23",
+  "close": "2026-09-25",
+  "allot": "2026-09-28",
+  "listing": "2026-09-30",
+  "priceLow": 350,
+  "priceHigh": 375,
+  "lot": 40,
+  "sizeCr": 300,
+  "sources": [
+   {
+    "t": "Business Today",
+    "u": "https://www.businesstoday.in/markets/ipo-corner/story/ipo-rush-four-ipos-conclude-today-check-subscription-status-other-details-of-issues-still-open-557928-2026-09-25"
+   }
+  ]
+ }
+}
