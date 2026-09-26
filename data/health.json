@@ -35,6 +35,18 @@
    "source": "IPO Premium (subscription)",
    "ok": false,
    "error": "HTTP 403"
+  },
+  {
+   "source": "Price: Lalithaa Jewellery Mart",
+   "ok": false
+  },
+  {
+   "source": "Price: NSDL",
+   "ok": false
+  },
+  {
+   "source": "Price: NSE",
+   "ok": false
   }
  ]
 }
