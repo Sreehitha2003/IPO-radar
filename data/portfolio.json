@@ -1,0 +1,196 @@
+{
+ "_help": "Your stocks. Add or remove entries freely. 'buyPrice' and 'qty' are optional: fill them in to see your profit or loss. 'symbols' are Yahoo Finance tickers tried in order (.NS = NSE, .BO = BSE).",
+ "stocks": [
+  {
+   "id": "lalithaa",
+   "name": "Lalithaa Jewellery Mart",
+   "symbols": [
+    "LALITHAA.NS",
+    "LALITHAA.BO",
+    "544879.BO"
+   ],
+   "exchange": "NSE: LALITHAA · BSE: 544879",
+   "ipoPrice": 201,
+   "buyPrice": null,
+   "qty": null,
+   "business": "Gold and diamond jewellery retailer, 61 stores across South India",
+   "research": {
+    "asOf": "25 Sep 2026",
+    "pe": 21.5,
+    "roe": 40.2,
+    "profitYoY": -22,
+    "revenueYoY": 26,
+    "notes": [
+     "Listed 24 Aug 2026 at ₹265 against an IPO price of ₹201 (66.6x subscribed)",
+     "Q1 FY27: revenue up 26% but profit down 22% YoY; EBITDA margin fell to 6.2% from 9.1%",
+     "Shares hit a 5% lower circuit after the results",
+     "Promoters hold 82.9%, so few shares trade freely"
+    ],
+    "watch": [
+     "Whether margins recover in Q2 FY27 (gold price swings squeeze jewellers)",
+     "Festive-season (Diwali) sales update",
+     "Anchor-investor lock-in expiry after listing can add selling pressure"
+    ],
+    "targets": [],
+    "sources": [
+     {
+      "t": "Screener",
+      "u": "https://www.screener.in/company/LALITHAA/"
+     },
+     {
+      "t": "India Infoline (listing)",
+      "u": "https://www.indiainfoline.com/news/companies/lalithaa-jewellery-mart-share-price-today-stock-lists-at-31-84-premium-4736-profit-per-lot"
+     },
+     {
+      "t": "Whalesbook (Q1 results)",
+      "u": "https://www.whalesbook.com/corporate-news/English/consumer-products/Lalithaa-Jewellery-Mart-Q1-Profit-Dips-22percent-Despite-26percent-Revenue-Growth/6aa7c2e6f2017017ae6998c3"
+     }
+    ]
+   },
+   "seed": {
+    "price": 366,
+    "prevClose": 370.15,
+    "high52": 389,
+    "low52": 240,
+    "asOf": "25 Sep 2026 close"
+   },
+   "listed": "2026-08-24"
+  },
+  {
+   "id": "nsdl",
+   "name": "NSDL (National Securities Depository)",
+   "symbols": [
+    "NSDL.BO",
+    "NSDL.NS"
+   ],
+   "exchange": "BSE only",
+   "ipoPrice": 800,
+   "buyPrice": null,
+   "qty": null,
+   "business": "India's largest depository: holds most demat shares and bonds",
+   "research": {
+    "asOf": "25 Sep 2026",
+    "pe": 41.1,
+    "pb": 6.6,
+    "profitYoY": -9.4,
+    "profitNote": "core profit before tax",
+    "revenueYoY": 65.6,
+    "notes": [
+     "Trading below its ₹800 IPO price and at a fresh 52-week low (₹770–777 on 24–25 Sep)",
+     "Below its 20-day (₹802) and 200-day (₹895) moving averages",
+     "Latest quarter: flat earnings, core profit before tax down 9.4%; costs and investor-protection fund contributions jumped",
+     "Still expensive at ~41x earnings for a slow-growth year"
+    ],
+    "watch": [
+     "Demat account additions (the key growth driver)",
+     "Whether costs stop rising (FY26 was called the peak of its tech-investment cycle)",
+     "Market share against CDSL"
+    ],
+    "targets": [
+     {
+      "by": "ICICI Securities",
+      "rating": "—",
+      "tp": 840
+     },
+     {
+      "by": "JM Financial",
+      "rating": "Add",
+      "tp": 1005
+     },
+     {
+      "by": "Motilal Oswal",
+      "rating": "Neutral",
+      "tp": 1000
+     }
+    ],
+    "targetsAsOf": "May 2026",
+    "sources": [
+     {
+      "t": "Tickertape",
+      "u": "https://www.tickertape.in/stocks/national-securities-depository-NSD"
+     },
+     {
+      "t": "MarketsMojo",
+      "u": "https://www.marketsmojo.com/news/stocks-in-action/national-securities-depository-ltd-falls-292-4-key-factors-behind-the-downtrend-4205418"
+     },
+     {
+      "t": "Business Today",
+      "u": "https://www.businesstoday.in/markets/stocks/story/nsdl-shares-down-40-in-9-months-get-up-to-30-target-price-cuts-roadmap-for-investors-530455-2026-05-08"
+     }
+    ]
+   },
+   "seed": {
+    "price": 771.1,
+    "prevClose": 780.3,
+    "high52": 1247.95,
+    "low52": 770,
+    "dma20": 802.43,
+    "dma200": 894.57,
+    "asOf": "25 Sep 2026 close"
+   },
+   "listed": "2025-08-06"
+  },
+  {
+   "id": "nse",
+   "name": "NSE (National Stock Exchange)",
+   "symbols": [
+    "NSE.BO",
+    "544937.BO"
+   ],
+   "exchange": "BSE: 544937",
+   "ipoPrice": 1785,
+   "buyPrice": null,
+   "qty": null,
+   "business": "India's largest stock exchange; dominant in equity derivatives",
+   "research": {
+    "asOf": "25 Sep 2026",
+    "pb": 13.8,
+    "notes": [
+     "Listed 24 Sep 2026 at ₹1,800 against ₹1,785 issue price; touched ₹1,878, then slipped below ₹1,800 on day 2",
+     "IPO was 5.7x subscribed and entirely existing shareholders selling (no new money for the company)",
+     "Market value about ₹4.4 lakh crore"
+    ],
+    "watch": [
+     "Any SEBI rule changes on F&O trading (derivatives are the main profit engine)",
+     "Quarterly volumes and profit growth (Emkay expects ~13% EPS growth a year to FY29)",
+     "Price in the first weeks after listing is usually volatile"
+    ],
+    "targets": [
+     {
+      "by": "Emkay Global",
+      "rating": "Buy",
+      "tp": 2050
+     },
+     {
+      "by": "Macquarie",
+      "rating": "Outperform",
+      "tp": 1965
+     }
+    ],
+    "targetsAsOf": "Sep 2026",
+    "sources": [
+     {
+      "t": "5paisa",
+      "u": "https://www.5paisa.com/stocks/nse-share-price"
+     },
+     {
+      "t": "Karmactive (listing)",
+      "u": "https://www.karmactive.com/nse-ipo-bse-listing-debut-price-september-2026/"
+     },
+     {
+      "t": "Business Standard (brokerage views)",
+      "u": "https://hindi.business-standard.com/markets/stock-market/nse-share-price-falls-below-rs1800-on-second-day-after-listing-emkay-sees-upside-to-rs2050-id-555181"
+     }
+    ]
+   },
+   "seed": {
+    "price": 1792.65,
+    "prevClose": 1818,
+    "high52": 1878,
+    "low52": 1790,
+    "asOf": "25 Sep 2026 close"
+   },
+   "listed": "2026-09-24"
+  }
+ ]
+}
