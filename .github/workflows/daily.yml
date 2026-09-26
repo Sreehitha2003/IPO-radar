@@ -1,0 +1,56 @@
+name: Daily IPO report
+
+on:
+  schedule:
+    - cron: "20 3 * * *"   # 03:20 UTC = 8:50 AM IST, every day
+  workflow_dispatch:        # "Run workflow" button for an update on demand
+  push:
+    branches: [main]
+
+permissions:
+  contents: write           # to save today's data back into the repo
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ipo-radar
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Find the project folder
+        run: |
+          DIR=$(dirname "$(dirname "$(find . -path '*/scripts/build.mjs' -not -path './.git/*' | head -1)")")
+          echo "Project folder: $DIR"
+          echo "DIR=$DIR" >> $GITHUB_ENV
+
+      - name: Collect GMP and subscription, score IPOs, build the page
+        run: node "$DIR/scripts/build.mjs"
+
+      - name: Save today's data (keeps GMP history day to day)
+        run: |
+          git config user.name "ipo-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$DIR/data"
+          git diff --cached --quiet || git commit -m "IPO report $(TZ=Asia/Kolkata date +%F)"
+          git push || echo "Nothing to push"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ env.DIR }}/site/out
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
