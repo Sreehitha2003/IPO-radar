@@ -1,1 +1,40 @@
-{"date": "2026-09-26", "health": []}
+{
+ "date": "2026-09-26",
+ "health": [
+  {
+   "source": "IPO Ji",
+   "ok": true,
+   "rows": 42
+  },
+  {
+   "source": "IPO Watch",
+   "ok": true,
+   "rows": 368
+  },
+  {
+   "source": "Investorgain",
+   "ok": true,
+   "rows": 50
+  },
+  {
+   "source": "IPO Central",
+   "ok": false,
+   "rows": 0
+  },
+  {
+   "source": "Chittorgarh (subscription)",
+   "ok": false,
+   "rows": 0
+  },
+  {
+   "source": "IPO Ji (subscription)",
+   "ok": true,
+   "rows": 23
+  },
+  {
+   "source": "IPO Premium (subscription)",
+   "ok": false,
+   "error": "HTTP 403"
+  }
+ ]
+}
