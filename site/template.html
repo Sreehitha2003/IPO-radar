@@ -130,6 +130,25 @@ td.num,th.num{text-align:right}
 .delta.up{color:var(--apply)} .delta.down{color:var(--avoid)}
 .health{font-size:12px;color:var(--ink3);display:flex;flex-wrap:wrap;gap:4px 12px}
 .health .bad{color:var(--avoid)}
+
+/* your stocks */
+.stocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+@media (max-width:400px){.stocks{grid-template-columns:1fr}}
+.stock{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:12px}
+.stock .price{font:600 28px/1 var(--mono);letter-spacing:-.02em}
+.chg{font:500 13px var(--mono)} .chg.up{color:var(--apply)} .chg.down{color:var(--avoid)}
+.st{display:inline-flex;align-items:center;gap:6px;font:700 12.5px var(--body);padding:4px 10px;border-radius:999px;white-space:nowrap}
+.st.positive{background:var(--apply-soft);color:var(--apply)} .st.mixed{background:var(--wait-soft);color:var(--wait)} .st.weak{background:var(--avoid-soft);color:var(--avoid)}
+.range{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--ink3)}
+.range .bar{position:relative;height:8px;border-radius:4px;background:var(--bar-track)}
+.range .dot{position:absolute;top:-4px;width:4px;height:16px;border-radius:2px;background:var(--ink);transform:translateX(-2px)}
+.range .ends{display:flex;justify-content:space-between;font:500 11.5px var(--mono)}
+.sig{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px;font-size:13.5px}
+.sig li{display:grid;grid-template-columns:18px 1fr;gap:6px;align-items:start}
+.sig .i{font:700 13px var(--mono);text-align:center}
+.sig .g{color:var(--apply)} .sig .b{color:var(--avoid)} .sig .n{color:var(--ink3)}
+.kv{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;color:var(--ink2)}
+.kv b{font-family:var(--mono);font-weight:500;color:var(--ink)}
 </style>
 </head>
 <body>
@@ -149,7 +168,13 @@ td.num,th.num{text-align:right}
   <div class="banner" id="banner" hidden></div>
   <section class="brief" id="brief" aria-label="Today's report"></section>
 
+  <section style="display:flex;flex-direction:column;gap:14px" aria-label="Your stocks" id="stocksSec" hidden>
+    <div><h2>Your stocks</h2><p class="muted" style="margin:4px 0 0;font-size:13.5px">Daily price check and signals for what you hold. Add your buy price and quantity in <span class="num">data/portfolio.json</span> to see profit or loss.</p></div>
+    <div class="stocks" id="stocks"></div>
+  </section>
+
   <section style="display:flex;flex-direction:column;gap:14px" aria-label="IPOs">
+    <h2>IPOs</h2>
     <div class="filters">
       <div class="seg" role="group" aria-label="Status" id="statusSeg"></div>
       <div class="seg" role="group" aria-label="Board" id="boardSeg"></div>
@@ -165,7 +190,7 @@ td.num,th.num{text-align:right}
       <div><b>Business &amp; price</b><ul><li>Revenue and profit growing: +1</li><li>Reasonable P/E (under ~25): +1; very rich (over 40): −1</li><li>Loss-making: −2</li><li>Mostly offer-for-sale or heavy debt: −1</li></ul></div>
       <div><b>Verdict</b><ul><li><b>Apply</b>: 5 or more</li><li><b>Listing gains only</b>: 3–4, sell on listing day</li><li><b>Wait</b>: 1–2, decide after final-day QIB numbers</li><li><b>Avoid</b>: 0 or less</li><li>SME issues need a higher bar and are marked high-risk</li></ul></div>
     </div>
-    <p class="disclaimer">GMP is an unofficial, unregulated grey-market quote. It changes quickly, differs between sources, and is not a guarantee of the listing price. This page is research to help you decide; it is not investment advice, and the verdicts are produced by a fixed checklist, not by a SEBI-registered adviser.</p>
+    <p class="disclaimer">GMP is an unofficial, unregulated grey-market quote. It changes quickly, differs between sources, and is not a guarantee of the listing price. Stock signals are a simple checklist (trend averages, profit growth, valuation, analyst targets). This page is research to help you decide; it is not investment advice, and the verdicts are produced by a fixed checklist, not by a SEBI-registered adviser.</p>
   </section>
 
   <section class="panel" aria-label="Past reports">
@@ -293,12 +318,37 @@ function renderStamp(){
   $("updatedAt").textContent="Updated "+(r.generatedAt||r.date);
   $("liveState").classList.toggle("stale",r.date<todayIST());
 }
-function renderAll(){renderStamp();renderBrief();renderFilters();renderGrid();renderHist();}
+function renderAll(){renderStocks();renderStamp();renderBrief();renderFilters();renderGrid();renderHist();}
 document.addEventListener("click",e=>{
   const s=e.target.closest("[data-s]");if(s){status=s.dataset.s;renderFilters();renderGrid();}
   const b=e.target.closest("[data-b]");if(b){board=b.dataset.b;renderFilters();renderGrid();}
   const g=e.target.closest("[data-go]");if(g){const x=ipos.find(i=>i.id===g.dataset.go);if(x){status=statusOf(x);board="all";renderFilters();renderGrid();setTimeout(()=>{const el=$("ipo-"+x.id);el&&el.scrollIntoView({behavior:"smooth",block:"start"});},30);}}
 });
+
+const STANCE={positive:"Signals positive",mixed:"Mixed signals",weak:"Signals weak"};
+function stockCard(x){
+  const q=x.quote;if(!q)return`<article class="stock"><b>${esc(x.name)}</b><p class="muted">No price available yet.</p></article>`;
+  const ch=q.prevClose?q.price-q.prevClose:null,chp=ch!=null?ch/q.prevClose*100:null;
+  const pos=q.high52>q.low52?Math.max(0,Math.min(100,(q.price-q.low52)/(q.high52-q.low52)*100)):50;
+  const r=x.research||{};
+  return`<article class="stock">
+    <div class="head"><div><div class="name" style="font:700 19px/1.15 var(--display)">${esc(x.name)}</div><div class="sub" style="font-size:12.5px;color:var(--ink3)">${esc(x.exchange||"")} · ${esc(x.business||"")}</div></div><span class="st ${x.stance}">${STANCE[x.stance]||""}</span></div>
+    <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap"><span class="price">₹${Number(q.price).toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2})}</span>${ch!=null?`<span class="chg ${ch>=0?"up":"down"}">${ch>=0?"▲":"▼"} ${Math.abs(ch).toFixed(2)} (${chp>=0?"+":""}${chp.toFixed(2)}%)</span>`:""}</div>
+    <div class="kv">${x.vsBasis!=null?`<span>vs ${esc(x.basisLabel)} ${inr(x.basis)}: <b style="color:${x.vsBasis>=0?"var(--apply)":"var(--avoid)"}">${x.vsBasis>=0?"+":""}${x.vsBasis.toFixed(1)}%</b></span>`:""}${x.pnl!=null?`<span>Your P&amp;L: <b style="color:${x.pnl>=0?"var(--apply)":"var(--avoid)"}">${x.pnl>=0?"+":"−"}${inr(Math.abs(Math.round(x.pnl)))}</b></span>`:""}${r.pe!=null?`<span>P/E <b>${r.pe}</b></span>`:""}${r.pb!=null?`<span>P/B <b>${r.pb}</b></span>`:""}${r.roe!=null?`<span>ROE <b>${r.roe}%</b></span>`:""}</div>
+    <div class="range"><span>${esc(x.rangeLabel||"52-week range")}</span><div class="bar"><span class="dot" style="left:${pos}%" title="Today"></span></div><div class="ends"><span>${inr(q.low52)}</span><span>${inr(q.high52)}</span></div></div>
+    <ul class="sig">${(x.signals||[]).map(g=>`<li><span class="i ${g.good===true?"g":g.good===false?"b":"n"}">${g.good===true?"✓":g.good===false?"✗":"•"}</span><span>${esc(g.text)}</span></li>`).join("")}</ul>
+    <p style="margin:0;color:var(--ink2);font-size:14px">${esc(x.stanceText||"")}</p>
+    <details><summary>What's happening and what to watch</summary>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:8px">
+        ${(r.notes||[]).length?`<div><h3>Recent</h3><ul style="margin:6px 0 0;padding-left:18px;font-size:13.5px;color:var(--ink2)">${r.notes.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`:""}
+        ${(r.watch||[]).length?`<div><h3>Watch for</h3><ul style="margin:6px 0 0;padding-left:18px;font-size:13.5px;color:var(--ink2)">${r.watch.map(n=>`<li>${esc(n)}</li>`).join("")}</ul></div>`:""}
+        ${(r.targets||[]).length?`<div class="tablewrap"><table><tr><th>Brokerage</th><th>Rating</th><th class="num">Target</th></tr>${r.targets.map(t=>`<tr><td>${esc(t.by)}</td><td>${esc(t.rating)}</td><td class="num">${inr(t.tp)}</td></tr>`).join("")}</table><div class="muted" style="font-size:12px;margin-top:4px">Targets as of ${esc(r.targetsAsOf||r.asOf||"")}</div></div>`:""}
+        <div class="sources">Research as of ${esc(r.asOf||"—")}. Price: ${esc(q.asOf||"")}${x.stale?" (not refreshed today)":""}. ${(r.sources||[]).map(s=>`<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.t)}</a>`).join(" ")}</div>
+      </div>
+    </details>
+  </article>`;
+}
+function renderStocks(){const st=(DATA&&DATA.stocks)||[];$("stocksSec").hidden=!st.length;$("stocks").innerHTML=st.map(stockCard).join("");}
 const DATA=/*__DATA__*/null;
 if(DATA){ipos=DATA.ipos||[];reports=DATA.reports||[];
   if(!ipos.some(x=>statusOf(x)===status)){const f=["open","upcoming","closed","listed"].find(s=>ipos.some(x=>statusOf(x)===s));if(f)status=f;}
