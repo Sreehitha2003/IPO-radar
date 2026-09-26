@@ -124,6 +124,72 @@ const SUMMARY = {
   avoid: "Weak on the checklist. Skip unless you have your own strong view.",
 };
 
+
+/* ---------------- your stocks ---------------- */
+// Daily prices from Yahoo Finance's public chart feed (no key). Falls back to the last known price.
+async function yahoo(symbol) {
+  if (FIXTURES) throw new Error("offline test");
+  for (const host of ["query1", "query2"]) {
+    try {
+      const j = JSON.parse(await get(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=1y&interval=1d`));
+      const r = j?.chart?.result?.[0]; if (!r) continue;
+      const closes = (r.indicators?.quote?.[0]?.close || []).filter((v) => v != null);
+      if (!closes.length) continue;
+      const avg = (n) => (closes.length >= n ? closes.slice(-n).reduce((a, b) => a + b, 0) / n : null);
+      const price = r.meta?.regularMarketPrice ?? closes.at(-1);
+      return { price, prevClose: closes.length > 1 ? closes.at(-2) : r.meta?.chartPreviousClose ?? null,
+        high52: Math.max(...closes, r.meta?.fiftyTwoWeekHigh ?? 0), low52: Math.min(...closes, r.meta?.fiftyTwoWeekLow ?? Infinity),
+        dma20: avg(20), dma50: avg(50), dma200: avg(200), days: closes.length, asOf: STAMP + " · Yahoo Finance (" + symbol + ")" };
+    } catch {}
+  }
+  throw new Error("no data for " + symbol);
+}
+function signals(st, q) {
+  const r = st.research || {}, out = [];
+  let pts = 0;
+  const add = (good, text, w = 1) => { pts += good ? w : -w; out.push({ good, text }); };
+  if (q.dma200 != null) add(q.price >= q.dma200, `${q.price >= q.dma200 ? "Above" : "Below"} its 200-day average (₹${Math.round(q.dma200)})`);
+  const shortAvg = q.dma50 ?? q.dma20, shortN = q.dma50 != null ? 50 : 20;
+  if (shortAvg != null) add(q.price >= shortAvg, `${q.price >= shortAvg ? "Above" : "Below"} its ${shortN}-day average (₹${Math.round(shortAvg)})`);
+  if (q.dma200 == null && shortAvg == null) out.push({ good: null, text: "Too newly listed for trend averages" });
+  if (r.profitYoY != null) { if (r.profitYoY >= 10) add(true, `Profit up ${r.profitYoY}% year on year`); else if (r.profitYoY <= -10) add(false, `Profit down ${Math.abs(r.profitYoY)}% year on year`); else out.push({ good: null, text: `${r.profitNote ? r.profitNote[0].toUpperCase() + r.profitNote.slice(1) : "Profit"} roughly flat (${r.profitYoY > 0 ? "+" : ""}${r.profitYoY}%)` }); }
+  if (r.pe != null) { if (r.pe > 40) add(false, `Expensive at ${r.pe}x earnings`); else if (r.pe <= 25) add(true, `Reasonable valuation (${r.pe}x earnings)`); }
+  const tps = (r.targets || []).map((t) => t.tp).filter(Boolean);
+  if (tps.length) { const avg = tps.reduce((a, b) => a + b, 0) / tps.length, up = (avg / q.price - 1) * 100;
+    if (up >= 10) add(true, `Analysts' average target ₹${Math.round(avg)} is ${up.toFixed(0)}% above today's price`);
+    else if (up < 0) add(false, `Price is already above analysts' average target (₹${Math.round(avg)})`);
+    else out.push({ good: null, text: `Analysts' average target ₹${Math.round(avg)} (${up.toFixed(0)}% upside)` }); }
+  const daysListed = st.listed ? (todayDate - new Date(st.listed + "T00:00:00Z")) / 864e5 : 365;
+  if (daysListed >= 60 && q.high52 && q.low52 && q.high52 > q.low52) { const pos = (q.price - q.low52) / (q.high52 - q.low52); if (pos <= 0.05) out.push({ good: false, text: "Trading at its 52-week low" }); else if (pos >= 0.95) out.push({ good: true, text: "Trading near its 52-week high" }); }
+  const stance = pts >= 2 ? "positive" : pts <= -2 ? "weak" : "mixed";
+  return { stance, pts, list: out };
+}
+const STANCE_TEXT = {
+  positive: "Signals are positive. Nothing in the data argues for selling; keep holding as long as your reason for buying still holds.",
+  mixed: "Signals are mixed. No strong reason to act either way; re-check after the next quarterly results.",
+  weak: "Several warning signs. Worth reviewing whether your original reason for holding still applies, and deciding the price at which you'd exit.",
+};
+async function buildStocks(prevStocks, health) {
+  const cfg = await readJson("data/portfolio.json", { stocks: [] });
+  const out = [];
+  for (const st of cfg.stocks || []) {
+    let q = null;
+    for (const sym of st.symbols || []) { try { q = await yahoo(sym); break; } catch {} }
+    const prev = (prevStocks || []).find((x) => x.id === st.id);
+    const live = !!q;
+    if (!q) q = prev?.quote || { ...(st.seed || {}) };
+    health.push({ source: `Price: ${st.name.split(" (")[0]}`, ok: live });
+    if (q.price == null) { out.push({ ...st, quote: null, stale: true }); continue; }
+    const sig = signals(st, q);
+    const basis = st.buyPrice || st.ipoPrice;
+    const daysListed = st.listed ? (todayDate - new Date(st.listed + "T00:00:00Z")) / 864e5 : 365;
+    out.push({ ...st, quote: q, stale: !live, rangeLabel: daysListed < 365 ? "Range since listing" : "52-week range", signals: sig.list, stance: sig.stance, stanceText: STANCE_TEXT[sig.stance],
+      basis, basisLabel: st.buyPrice ? "your buy price" : "IPO price", vsBasis: basis ? (q.price / basis - 1) * 100 : null,
+      pnl: st.buyPrice && st.qty ? (q.price - st.buyPrice) * st.qty : null });
+  }
+  return out;
+}
+
 /* ---------------- build ---------------- */
 function statusOf(x) {
   if (x.listing && TODAY >= x.listing) return "listed";
@@ -188,6 +254,7 @@ async function main() {
   }
 
   // Score, set status, drop IPOs that listed more than a week ago.
+  const stocks = await buildStocks(state.stocks, health);
   const list = [];
   for (const [id, x] of Object.entries(ipos)) {
     x.id = id; x.status = statusOf(x);
@@ -215,6 +282,8 @@ async function main() {
   if (avoid.length) parts.push(`Avoid: ${join(nm(avoid))}.`);
   if (closingToday.length) parts.push(`Closing today: ${join(closingToday)}.`);
   if (opening.length) parts.push(`Opening today: ${join(opening)}.`);
+  const weakS = stocks.filter((x) => x.stance === "weak").map((x) => x.name.split(" (")[0]);
+  if (weakS.length) parts.push(`Your stocks to review: ${join(weakS)}.`);
   const failed = health.filter((h) => !h.ok).length;
   const report = { date: TODAY, generatedAt: STAMP, headline, summary: parts.join(" "), apply, listing, wait, avoid,
     note: failed === health.length ? "No data source could be reached today, so these numbers are carried over from the last successful run." : failed ? `${failed} of ${health.length} data sources failed today; the rest were used.` : "" };
@@ -222,12 +291,12 @@ async function main() {
   const allReports = [report, ...reports.filter((r) => r.date !== TODAY)].slice(0, 60);
 
   await mkdir(P("data/"), { recursive: true });
-  await writeFile(P("data/state.json"), JSON.stringify({ updated: STAMP, ipos }, null, 1));
+  await writeFile(P("data/state.json"), JSON.stringify({ updated: STAMP, ipos, stocks: stocks.map((x) => ({ id: x.id, quote: x.quote })) }, null, 1));
   await writeFile(P("data/reports.json"), JSON.stringify(allReports, null, 1));
   await writeFile(P("data/health.json"), JSON.stringify({ date: TODAY, health }, null, 1));
 
   const tpl = await readFile(P("site/template.html"), "utf8");
-  const data = { ipos: list, reports: allReports, health, today: TODAY };
+  const data = { ipos: list, reports: allReports, health, today: TODAY, stocks };
   const html = tpl.replace("/*__DATA__*/null", JSON.stringify(data).replace(/</g, "\\u003c"));
   await mkdir(P("site/out/"), { recursive: true });
   await writeFile(P("site/out/index.html"), html);
