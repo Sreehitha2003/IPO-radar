@@ -1,5 +1,48 @@
 [
  {
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-28 15:27 IST",
+  "headline": "Moneyview and A-One Steels India are today's strongest calls",
+  "summary": "18 IPOs open and 10 coming up. Apply: Moneyview and A-One Steels India. Listing gains only: German Green Steel and Power, Orient Cables (India) and SRIT India. Wait for final-day numbers: Vans Electroengineerings, Shah Investor's Home, Peshwa Wheat, EverestIMS Technologies, Dudani Retail, Shivchem Agro and Nityas Gems Jewellery. Avoid: Runwal Enterprises, Himalayan Solar, Sai Urja Indo Ventures, Acme Universal Safezone 9, Pind Hospitality, Black Opal Consultants, Papadmalji Agro Foods, Vishal Nirmiti, Dove Soft, Shree TNB Polymers, SJP Ultrasonics, Paramount Syntex, Omara Ventures, Sai Urja Indo BSE SME O, Green Asia Impex and Acevector. Closing today: Moneyview, A-One Steels India, Green Asia Impex and Peshwa Wheat. Opening today: SRIT India, Shah Investor's Home, Acme Universal Safezone 9, Pind Hospitality, Shivchem Agro and Shree TNB Polymers. Your stocks to review: NSDL.",
+  "apply": [
+   "moneyview",
+   "a-one-steels"
+  ],
+  "listing": [
+   "german-green-steel",
+   "orient-cables",
+   "srit-india"
+  ],
+  "wait": [
+   "vanselectroengineerings",
+   "shah-investors-home",
+   "peshwawheat",
+   "everestimstechnologies",
+   "dudaniretail",
+   "shivchemagro",
+   "nityasgemsjewellery"
+  ],
+  "avoid": [
+   "runwal-enterprises",
+   "himalayansolar",
+   "saiurjaindoventures",
+   "acmeuniversalsafezone9",
+   "pindhospitality",
+   "blackopalconsultants",
+   "papadmaljiagrofoods",
+   "vishalnirmiti",
+   "dovesoft",
+   "shreetnbpolymers",
+   "sjpultrasonics",
+   "paramountsyntex",
+   "omaraventures",
+   "saiurjaindoo",
+   "greenasiaimpex",
+   "acevector"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-09-27",
   "generatedAt": "2026-09-27 14:52 IST",
   "headline": "Moneyview is today's strongest call",
