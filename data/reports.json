@@ -1,5 +1,45 @@
 [
  {
+  "date": "2026-09-29",
+  "generatedAt": "2026-09-29 15:27 IST",
+  "headline": "Orient Cables (India) and German Green Steel and Power are today's strongest calls",
+  "summary": "19 IPOs open and 6 coming up. Apply: Orient Cables (India) and German Green Steel and Power. Listing gains only: SRIT India. Wait for final-day numbers: Vans Electroengineerings, Shah Investor's Home, Papadmalji Agro Foods, EverestIMS Technologies, Runwal Enterprises, Dudani Retail, Shivchem Agro and Nityas Gems Jewellery. Avoid: Himalayan Solar, Sai Urja Indo Ventures, Acme Universal Safezone 9, Pind Hospitality, Black Opal Consultants, Vishal Nirmiti, Dove Soft, Shree TNB Polymers, SJP Ultrasonics, Paramount Syntex, Omara Ventures, Sai Urja Indo BSE SME O, Sai Urja Indo BSE SME CT and Acevector. Closing today: Orient Cables (India), German Green Steel and Power, Runwal Enterprises, Acevector, Dudani Retail, Himalayan Solar, Sai Urja Indo Ventures, Sai Urja Indo BSE SME O and Sai Urja Indo BSE SME CT. Opening today: Black Opal Consultants, Papadmalji Agro Foods, Vans Electroengineerings and EverestIMS Technologies. Your stocks to review: NSDL.",
+  "apply": [
+   "orient-cables",
+   "german-green-steel"
+  ],
+  "listing": [
+   "srit-india"
+  ],
+  "wait": [
+   "vanselectroengineerings",
+   "shah-investors-home",
+   "papadmaljiagrofoods",
+   "everestimstechnologies",
+   "runwal-enterprises",
+   "dudaniretail",
+   "shivchemagro",
+   "nityasgemsjewellery"
+  ],
+  "avoid": [
+   "himalayansolar",
+   "saiurjaindoventures",
+   "acmeuniversalsafezone9",
+   "pindhospitality",
+   "blackopalconsultants",
+   "vishalnirmiti",
+   "dovesoft",
+   "shreetnbpolymers",
+   "sjpultrasonics",
+   "paramountsyntex",
+   "omaraventures",
+   "saiurjaindoo",
+   "saiurjaindoct",
+   "acevector"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-09-28",
   "generatedAt": "2026-09-28 15:27 IST",
   "headline": "Moneyview and A-One Steels India are today's strongest calls",
