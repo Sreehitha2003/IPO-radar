@@ -1,5 +1,37 @@
 [
  {
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-30 15:19 IST",
+  "headline": "Shah Investor's Home is today's strongest call",
+  "summary": "14 IPOs open and 3 coming up. Apply: Shah Investor's Home. Listing gains only: SRIT India. Wait for final-day numbers: Vans Electroengineerings, Acme Universal Safezone 9, Papadmalji Agro Foods, EverestIMS Technologies, Paramount Syntex, Black Opal Consultants and Nityas Gems Jewellery. Avoid: Pind Hospitality, Shivchem Agro, Vishal Nirmiti, Dove Soft, Shree TNB Polymers, SJP Ultrasonics, Omara Ventures and R.K.Fashion. Closing today: SRIT India, Shah Investor's Home, Acme Universal Safezone 9, Pind Hospitality and Shivchem Agro. Opening today: Nityas Gems Jewellery, Vishal Nirmiti, Dove Soft and SJP Ultrasonics. Your stocks to review: NSDL.",
+  "apply": [
+   "shah-investors-home"
+  ],
+  "listing": [
+   "srit-india"
+  ],
+  "wait": [
+   "vanselectroengineerings",
+   "acmeuniversalsafezone9",
+   "papadmaljiagrofoods",
+   "everestimstechnologies",
+   "paramountsyntex",
+   "blackopalconsultants",
+   "nityasgemsjewellery"
+  ],
+  "avoid": [
+   "pindhospitality",
+   "shivchemagro",
+   "vishalnirmiti",
+   "dovesoft",
+   "shreetnbpolymers",
+   "sjpultrasonics",
+   "omaraventures",
+   "rkfashion"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-09-29",
   "generatedAt": "2026-09-29 15:27 IST",
   "headline": "Orient Cables (India) and German Green Steel and Power are today's strongest calls",
