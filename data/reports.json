@@ -1,5 +1,31 @@
 [
  {
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-05 16:08 IST",
+  "headline": "EverestIMS Technologies is today's strongest call",
+  "summary": "7 IPOs open and 5 coming up. Apply: EverestIMS Technologies. Wait for final-day numbers: Paramount Syntex and R.K.Fashion. Avoid: Nityas Gems Jewellery, Vishal Nirmiti, Dove Soft, Shree TNB Polymers, SJP Ultrasonics, Omara Ventures, Jio Platforms, Jio Platform (U) Mainboard and Nityas Gems (O) Mainboard. Closing today: Nityas Gems Jewellery, Vishal Nirmiti, Dove Soft, EverestIMS Technologies, Shree TNB Polymers and SJP Ultrasonics. Opening today: R.K.Fashion. Your stocks to review: NSDL.",
+  "apply": [
+   "everestimstechnologies"
+  ],
+  "listing": [],
+  "wait": [
+   "paramountsyntex",
+   "rkfashion"
+  ],
+  "avoid": [
+   "nityasgemsjewellery",
+   "vishalnirmiti",
+   "dovesoft",
+   "shreetnbpolymers",
+   "sjpultrasonics",
+   "omaraventures",
+   "jioplatforms",
+   "jioplatformmainboard",
+   "nityasgemsmainboard"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-04",
   "generatedAt": "2026-10-04 15:26 IST",
   "headline": "Nothing strong on the checklist today",
