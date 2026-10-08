@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08 16:14 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "0 IPOs open and 5 coming up. Wait for final-day numbers: HD Fire Protect and Jio Platforms. Avoid: Jio Platform (U) Mainboard, Ravita Engineering Services and Vaibhav Vyapaar. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "hdfireprotect",
+   "jioplatforms"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "ravitaengineeringservices",
+   "vaibhavvyapaar"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-07",
   "generatedAt": "2026-10-07 15:54 IST",
   "headline": "Nothing strong on the checklist today",
