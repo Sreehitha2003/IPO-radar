@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-09 16:13 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "2 IPOs open and 6 coming up. Wait for final-day numbers: Jio Platforms, HD Fire Protect, Fusion CX and Acme India Industries BSE SME [email protected] (12.76%). Avoid: Jio Platform (U) Mainboard, Ravita Engineering Services, Vaibhav Vyapaar and TNA Solutions BSE SME [email protected] (-20%). Closing today: Acme India Industries BSE SME [email protected] (12.76%) and TNA Solutions BSE SME [email protected] (-20%). Opening today: Sai Urja Indo BSE SME [email protected] (18.41%), SJP Ultrasonic BSE SME [email protected] (10.75%), Eventions NSE SME [email protected] (-5.93%), Sollfege Smart Electronics BSE SME [email protected] (89.82%), Acme India Industries BSE SME [email protected] (12.76%) and TNA Solutions BSE SME [email protected] (-20%). Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "jioplatforms",
+   "hdfireprotect",
+   "fusioncx",
+   "acmeindustriesemailprotected"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "ravitaengineeringservices",
+   "vaibhavvyapaar",
+   "tnasolutionsemailprotected"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-08",
   "generatedAt": "2026-10-08 16:14 IST",
   "headline": "Nothing strong on the checklist today",
