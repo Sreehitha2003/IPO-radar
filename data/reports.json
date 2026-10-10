@@ -1,5 +1,27 @@
 [
  {
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-10 15:28 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "0 IPOs open and 9 coming up. Wait for final-day numbers: Jio Platforms, HD Fire Protect and Fusion CX. Avoid: Jio Platform (U) Mainboard, Ravita Engineering Services, Vaibhav Vyapaar, Bonfiglioli Transmissions, Sahajanand Medical Technologies and Zetwerk Manufacturing Upcoming. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "jioplatforms",
+   "hdfireprotect",
+   "fusioncx"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "ravitaengineeringservices",
+   "vaibhavvyapaar",
+   "bonfigliolitransmissions",
+   "sahajanandmedicaltechnologies",
+   "zetwerkmanufacturing"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-09",
   "generatedAt": "2026-10-09 16:13 IST",
   "headline": "Nothing strong on the checklist today",
