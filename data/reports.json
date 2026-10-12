@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-10-12",
+  "generatedAt": "2026-10-12 16:34 IST",
+  "headline": "No clear buys today; Tonbo Imaging India looks good for listing gains",
+  "summary": "0 IPOs open and 11 coming up. Listing gains only: Tonbo Imaging India. Wait for final-day numbers: Jio Platforms, HD Fire Protect, Bonfiglioli Transmissions, Ravita Engineering Services, Sahajanand Medical Technologies and Zetwerk Manufacturing Upcoming. Avoid: Jio Platform (U) Mainboard, Vaibhav Vyapaar, Fusion CX and Shellz India. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [
+   "tonboimaging"
+  ],
+  "wait": [
+   "jioplatforms",
+   "hdfireprotect",
+   "bonfigliolitransmissions",
+   "ravitaengineeringservices",
+   "sahajanandmedicaltechnologies",
+   "zetwerkmanufacturing"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "vaibhavvyapaar",
+   "fusioncx",
+   "shellz"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-11",
   "generatedAt": "2026-10-11 15:38 IST",
   "headline": "Nothing strong on the checklist today",

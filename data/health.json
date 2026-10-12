@@ -1,5 +1,5 @@
 {
- "date": "2026-10-11",
+ "date": "2026-10-12",
  "health": [
   {
    "source": "IPO Ji",
@@ -8,8 +8,8 @@
   },
   {
    "source": "IPO Watch",
-   "ok": true,
-   "rows": 34
+   "ok": false,
+   "error": "fetch failed"
   },
   {
    "source": "Investorgain",
