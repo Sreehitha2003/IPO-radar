@@ -1,5 +1,25 @@
 [
  {
+  "date": "2026-10-20",
+  "generatedAt": "2026-10-20 14:11 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "3 IPOs open and 4 coming up. Wait for final-day numbers: Jio Platforms, Paras Healthcare and BLS Polymers. Avoid: Jio Platform (U) Mainboard, Core4 Engineers BSE SME U, EAAA India Alternatives and SFC Environmental Technologies. Opening today: Fusion CX, Paras Healthcare and BLS Polymers. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "jioplatforms",
+   "parashealthcare",
+   "blspolymers"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "core4engineersu",
+   "eaaaalternatives",
+   "sfcenvironmentaltechnologies"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-19",
   "generatedAt": "2026-10-19 14:34 IST",
   "headline": "Tonbo Imaging India and Bonfiglioli Transmissions are today's strongest calls",
