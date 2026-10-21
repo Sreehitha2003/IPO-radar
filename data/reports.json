@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-10-21",
+  "generatedAt": "2026-10-21 14:12 IST",
+  "headline": "No clear buys today; Jio Platforms looks good for listing gains",
+  "summary": "5 IPOs open and 2 coming up. Listing gains only: Jio Platforms. Wait for final-day numbers: BLS Polymers. Avoid: Jio Platform (U) Mainboard, Paras Healthcare, Core4 Engineers BSE SME U, EAAA India Alternatives and SFC Environmental Technologies. Closing today: Paras Healthcare. Opening today: Jio Platforms and Jio Platform (U) Mainboard. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [
+   "jioplatforms"
+  ],
+  "wait": [
+   "blspolymers"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "parashealthcare",
+   "core4engineersu",
+   "eaaaalternatives",
+   "sfcenvironmentaltechnologies"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-20",
   "generatedAt": "2026-10-20 14:11 IST",
   "headline": "Nothing strong on the checklist today",
