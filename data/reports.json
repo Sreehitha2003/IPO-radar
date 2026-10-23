@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-10-23",
+  "generatedAt": "2026-10-23 14:10 IST",
+  "headline": "Jio Platforms is today's strongest call",
+  "summary": "5 IPOs open and 5 coming up. Apply: Jio Platforms. Wait for final-day numbers: BLS Polymers and SFC Environmental Technologies. Avoid: Jio Platform (U) Mainboard, Core4 Engineers BSE SME U, EAAA India Alternatives, Wiscon Industries, Bombay Coated Special Steels, Carver Roboweld BSE SME U and M.K.Sons Fine Jewels. Closing today: Jio Platforms and Jio Platform (U) Mainboard. Your stocks to review: NSDL.",
+  "apply": [
+   "jioplatforms"
+  ],
+  "listing": [],
+  "wait": [
+   "blspolymers",
+   "sfcenvironmentaltechnologies"
+  ],
+  "avoid": [
+   "jioplatformmainboard",
+   "core4engineersu",
+   "eaaaalternatives",
+   "wisconindustries",
+   "bombaycoatedspecialsteels",
+   "carverroboweldu",
+   "mksonsfinejewels"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-22",
   "generatedAt": "2026-10-22 14:14 IST",
   "headline": "No clear buys today; Jio Platforms looks good for listing gains",
