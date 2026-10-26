@@ -1,5 +1,27 @@
 [
  {
+  "date": "2026-10-26",
+  "generatedAt": "2026-10-26 14:37 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "4 IPOs open and 5 coming up. Wait for final-day numbers: BLS Polymers, SFC Environmental Technologies and Bombay Coated Special Steels. Avoid: Core4 Engineers BSE SME U, EAAA India Alternatives, Wiscon Industries, Carver Roboweld BSE SME U, M.K.Sons Fine Jewels and Ajwa Projects BSE SME U. Opening today: EAAA India Alternatives. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "blspolymers",
+   "sfcenvironmentaltechnologies",
+   "bombaycoatedspecialsteels"
+  ],
+  "avoid": [
+   "core4engineersu",
+   "eaaaalternatives",
+   "wisconindustries",
+   "carverroboweldu",
+   "mksonsfinejewels",
+   "ajwaprojectsu"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-25",
   "generatedAt": "2026-10-25 14:03 IST",
   "headline": "Nothing strong on the checklist today",
