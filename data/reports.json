@@ -1,5 +1,30 @@
 [
  {
+  "date": "2026-10-27",
+  "generatedAt": "2026-10-27 14:39 IST",
+  "headline": "BLS Polymers is today's strongest call",
+  "summary": "6 IPOs open and 5 coming up. Apply: BLS Polymers. Wait for final-day numbers: SFC Environmental Technologies, Wiscon Industries and Bombay Coated Special Steels. Avoid: Core4 Engineers BSE SME U, EAAA India Alternatives, Carver Roboweld BSE SME U, M.K.Sons Fine Jewels, Ajwa Projects BSE SME U, Maxwell Engineering Solutions and Vectras Enprocon. Closing today: BLS Polymers and Core4 Engineers BSE SME U. Opening today: SFC Environmental Technologies and Wiscon Industries. Your stocks to review: NSDL.",
+  "apply": [
+   "blspolymers"
+  ],
+  "listing": [],
+  "wait": [
+   "sfcenvironmentaltechnologies",
+   "wisconindustries",
+   "bombaycoatedspecialsteels"
+  ],
+  "avoid": [
+   "core4engineersu",
+   "eaaaalternatives",
+   "carverroboweldu",
+   "mksonsfinejewels",
+   "ajwaprojectsu",
+   "maxwellengineeringsolutions",
+   "vectrasenprocon"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-26",
   "generatedAt": "2026-10-26 14:37 IST",
   "headline": "Nothing strong on the checklist today",
