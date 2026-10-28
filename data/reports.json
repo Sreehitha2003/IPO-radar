@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-10-28",
+  "generatedAt": "2026-10-28 15:20 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "5 IPOs open and 6 coming up. Wait for final-day numbers: EAAA India Alternatives, Ajwa Projects BSE SME U, Maxwell Engineering Solutions, SFC Environmental Technologies, Wiscon Industries, Bombay Coated Special Steels and M.K.Sons Fine Jewels. Avoid: Carver Roboweld BSE SME U, Vectras Enprocon, HGS (India) and Vedant Poly Fabs Upcoming. Closing today: EAAA India Alternatives. Opening today: M.K.Sons Fine Jewels. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "eaaaalternatives",
+   "ajwaprojectsu",
+   "maxwellengineeringsolutions",
+   "sfcenvironmentaltechnologies",
+   "wisconindustries",
+   "bombaycoatedspecialsteels",
+   "mksonsfinejewels"
+  ],
+  "avoid": [
+   "carverroboweldu",
+   "vectrasenprocon",
+   "hgs",
+   "vedantpolyfabs"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-27",
   "generatedAt": "2026-10-27 14:39 IST",
   "headline": "BLS Polymers is today's strongest call",
