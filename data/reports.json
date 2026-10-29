@@ -1,5 +1,29 @@
 [
  {
+  "date": "2026-10-29",
+  "generatedAt": "2026-10-29 15:41 IST",
+  "headline": "No clear buys today; SFC Environmental Technologies looks good for listing gains",
+  "summary": "5 IPOs open and 5 coming up. Listing gains only: SFC Environmental Technologies. Wait for final-day numbers: Bombay Coated Special Steels, Maxwell Engineering Solutions, Wiscon Industries, M.K.Sons Fine Jewels and Ajwa Projects BSE SME U. Avoid: Carver Roboweld BSE SME U, Vectras Enprocon, HGS (India) and Vedant Poly Fabs Upcoming. Closing today: SFC Environmental Technologies and Wiscon Industries. Opening today: Bombay Coated Special Steels. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [
+   "sfcenvironmentaltechnologies"
+  ],
+  "wait": [
+   "bombaycoatedspecialsteels",
+   "maxwellengineeringsolutions",
+   "wisconindustries",
+   "mksonsfinejewels",
+   "ajwaprojectsu"
+  ],
+  "avoid": [
+   "carverroboweldu",
+   "vectrasenprocon",
+   "hgs",
+   "vedantpolyfabs"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-28",
   "generatedAt": "2026-10-28 15:20 IST",
   "headline": "Nothing strong on the checklist today",
