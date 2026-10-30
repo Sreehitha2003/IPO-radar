@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-10-30",
+  "generatedAt": "2026-10-30 15:42 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "7 IPOs open and 1 coming up. Wait for final-day numbers: Maxwell Engineering Solutions and Bombay Coated Special Steels. Avoid: Carver Roboweld BSE SME U, M.K.Sons Fine Jewels, Ajwa Projects BSE SME U, Vectras Enprocon, HGS (India) and Vedant Poly Fabs Upcoming. Closing today: Carver Roboweld BSE SME U, M.K.Sons Fine Jewels and Ajwa Projects BSE SME U. Opening today: Paramount Syntex, Omara Ventures, Nityas Gems (O) Mainboard, Ajwa Projects BSE SME U, Maxwell Engineering Solutions, Vectras Enprocon and HGS (India). Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "maxwellengineeringsolutions",
+   "bombaycoatedspecialsteels"
+  ],
+  "avoid": [
+   "carverroboweldu",
+   "mksonsfinejewels",
+   "ajwaprojectsu",
+   "vectrasenprocon",
+   "hgs",
+   "vedantpolyfabs"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-10-29",
   "generatedAt": "2026-10-29 15:41 IST",
   "headline": "No clear buys today; SFC Environmental Technologies looks good for listing gains",
