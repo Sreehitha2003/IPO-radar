@@ -1,15 +1,15 @@
 {
- "date": "2026-11-02",
+ "date": "2026-11-03",
  "health": [
   {
    "source": "IPO Ji",
    "ok": true,
-   "rows": 13
+   "rows": 10
   },
   {
    "source": "IPO Watch",
    "ok": true,
-   "rows": 14
+   "rows": 13
   },
   {
    "source": "Investorgain",
@@ -29,7 +29,7 @@
   {
    "source": "IPO Ji (subscription)",
    "ok": true,
-   "rows": 13
+   "rows": 10
   },
   {
    "source": "IPO Premium (subscription)",
