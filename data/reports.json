@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-04",
+  "generatedAt": "2026-11-04 16:40 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "1 IPOs open and 2 coming up. Wait for final-day numbers: HGS (India) NSE SME CT and HGS (India) NSE SME C. Avoid: Vedant Poly Fabs Upcoming. Closing today: Vedant Poly Fabs Upcoming. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "hgsct",
+   "hgsc"
+  ],
+  "avoid": [
+   "vedantpolyfabs"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-03",
   "generatedAt": "2026-11-03 16:31 IST",
   "headline": "Maxwell Engineering Solutions is today's strongest call",
