@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-06",
+  "generatedAt": "2026-11-06 16:38 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "0 IPOs open and 4 coming up. Wait for final-day numbers: HGS (India) NSE SME C, HGS (India) NSE SME CT and HGS (India) NSE SME [email protected] (33.33%). Avoid: Ajwa Projects BSE SME [email protected] (0%). Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "hgsc",
+   "hgsct",
+   "hgsemailprotected"
+  ],
+  "avoid": [
+   "ajwaprojectsemailprotected"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-05",
   "generatedAt": "2026-11-05 16:40 IST",
   "headline": "Nothing strong on the checklist today",
