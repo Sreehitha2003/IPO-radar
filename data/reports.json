@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-11-08",
+  "generatedAt": "2026-11-08 16:04 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "0 IPOs open and 5 coming up. Wait for final-day numbers: HGS (India) NSE SME C, HGS (India) NSE SME CT and HGS (India) NSE SME [email protected] (33.33%). Avoid: Ajwa Projects BSE SME [email protected] (0%) and Johnsoncab Electricals BSE SME [email protected] (19.25%). Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "hgsc",
+   "hgsct",
+   "hgsemailprotected"
+  ],
+  "avoid": [
+   "ajwaprojectsemailprotected",
+   "johnsoncabelectricalsemailprotected"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-07",
   "generatedAt": "2026-11-07 15:56 IST",
   "headline": "Nothing strong on the checklist today",
