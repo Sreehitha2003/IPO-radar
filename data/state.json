@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08 16:04 IST",
+ "updated": "2026-11-09 17:19 IST",
  "ipos": {
   "greenasiaimpex": {
    "id": "greenasiaimpex",
@@ -4376,13 +4376,9 @@
    "gmp": {
     "value": 250,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 247
-    },
     {
      "d": "2026-10-21",
      "v": 255
@@ -4457,6 +4453,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 250
+    },
+    {
+     "d": "2026-11-09",
      "v": 250
     }
    ],
@@ -4720,13 +4720,9 @@
    "gmp": {
     "value": 70,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 63
-    },
     {
      "d": "2026-10-21",
      "v": 70
@@ -4801,6 +4797,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 70
+    },
+    {
+     "d": "2026-11-09",
      "v": 70
     }
    ],
@@ -4967,13 +4967,9 @@
    "gmp": {
     "value": 1,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 4
-    },
     {
      "d": "2026-10-21",
      "v": 2
@@ -5048,6 +5044,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 1
+    },
+    {
+     "d": "2026-11-09",
      "v": 1
     }
    ],
@@ -5479,13 +5479,9 @@
    "gmp": {
     "value": 13.5,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 16
-    },
     {
      "d": "2026-10-21",
      "v": 18
@@ -5560,6 +5556,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 13.5
+    },
+    {
+     "d": "2026-11-09",
      "v": 13.5
     }
    ],
@@ -5813,13 +5813,9 @@
    "gmp": {
     "value": 66,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 125
-    },
     {
      "d": "2026-10-21",
      "v": 135
@@ -5895,6 +5891,10 @@
     {
      "d": "2026-11-08",
      "v": 66
+    },
+    {
+     "d": "2026-11-09",
+     "v": 66
     }
    ],
    "status": "closed",
@@ -5931,13 +5931,9 @@
    "gmp": {
     "value": 17,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 23
-    },
     {
      "d": "2026-10-21",
      "v": 24
@@ -6013,6 +6009,10 @@
     {
      "d": "2026-11-08",
      "v": 17
+    },
+    {
+     "d": "2026-11-09",
+     "v": 17
     }
    ],
    "status": "closed",
@@ -6049,13 +6049,9 @@
    "gmp": {
     "value": 1.2,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 3
-    },
     {
      "d": "2026-10-21",
      "v": 2
@@ -6131,6 +6127,10 @@
     {
      "d": "2026-11-08",
      "v": 1.2
+    },
+    {
+     "d": "2026-11-09",
+     "v": 1.2
     }
    ],
    "status": "closed",
@@ -6178,13 +6178,9 @@
    "gmp": {
     "value": 452,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 500
-    },
     {
      "d": "2026-10-21",
      "v": 510
@@ -6260,6 +6256,10 @@
     {
      "d": "2026-11-08",
      "v": 452
+    },
+    {
+     "d": "2026-11-09",
+     "v": 452
     }
    ],
    "gmpPrev": 452,
@@ -6284,13 +6284,9 @@
    "gmp": {
     "value": 7,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 46
-    },
     {
      "d": "2026-10-21",
      "v": 35
@@ -6366,6 +6362,10 @@
     {
      "d": "2026-11-08",
      "v": 7
+    },
+    {
+     "d": "2026-11-09",
+     "v": 7
     }
    ],
    "status": "closed",
@@ -6403,13 +6403,9 @@
    "gmp": {
     "value": 13,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 75
-    },
     {
      "d": "2026-10-21",
      "v": 45
@@ -6485,6 +6481,10 @@
     {
      "d": "2026-11-08",
      "v": 13
+    },
+    {
+     "d": "2026-11-09",
+     "v": 13
     }
    ],
    "status": "closed",
@@ -6520,13 +6520,9 @@
    "gmp": {
     "value": 69,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 20
-    },
     {
      "d": "2026-10-21",
      "v": 25
@@ -6602,6 +6598,10 @@
     {
      "d": "2026-11-08",
      "v": 69
+    },
+    {
+     "d": "2026-11-09",
+     "v": 69
     }
    ],
    "status": "closed",
@@ -6622,7 +6622,7 @@
     "nii": 559.2,
     "retail": 128.36,
     "total": 241.22,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -6716,7 +6716,7 @@
     "nii": 13.18,
     "retail": 2.72,
     "total": 5.63,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -6732,13 +6732,9 @@
    "gmp": {
     "value": 54,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 0
-    },
     {
      "d": "2026-10-21",
      "v": 0
@@ -6814,6 +6810,10 @@
     {
      "d": "2026-11-08",
      "v": 54
+    },
+    {
+     "d": "2026-11-09",
+     "v": 54
     }
    ],
    "status": "closed",
@@ -6834,7 +6834,7 @@
     "nii": 4.81,
     "retail": 1.08,
     "total": 5.51,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -6850,13 +6850,9 @@
    "gmp": {
     "value": 15.5,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-20",
-     "v": 0
-    },
     {
      "d": "2026-10-21",
      "v": 0
@@ -6932,6 +6928,10 @@
     {
      "d": "2026-11-08",
      "v": 15.5
+    },
+    {
+     "d": "2026-11-09",
+     "v": 15.5
     }
    ],
    "status": "closed",
@@ -6952,7 +6952,7 @@
     "nii": 12.81,
     "retail": 2.71,
     "total": 9.47,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -6968,7 +6968,7 @@
    "gmp": {
     "value": 0,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7042,6 +7042,10 @@
     {
      "d": "2026-11-08",
      "v": 0
+    },
+    {
+     "d": "2026-11-09",
+     "v": 0
     }
    ],
    "status": "closed",
@@ -7062,7 +7066,7 @@
     "nii": 0.62,
     "retail": 0.66,
     "total": 1.17,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7078,7 +7082,7 @@
    "gmp": {
     "value": 8,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7152,6 +7156,10 @@
     {
      "d": "2026-11-08",
      "v": 8
+    },
+    {
+     "d": "2026-11-09",
+     "v": 8
     }
    ],
    "status": "closed",
@@ -7172,7 +7180,7 @@
     "nii": 166.44,
     "retail": 35.46,
     "total": 63.89,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7270,7 +7278,7 @@
     "nii": 40.74,
     "retail": 19.17,
     "total": 25.87,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7286,7 +7294,7 @@
    "gmp": {
     "value": 11,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7356,6 +7364,10 @@
     {
      "d": "2026-11-08",
      "v": 11
+    },
+    {
+     "d": "2026-11-09",
+     "v": 11
     }
    ],
    "status": "closed",
@@ -7375,7 +7387,7 @@
     "nii": 14.12,
     "retail": 3.08,
     "total": 5.09,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7404,7 +7416,7 @@
    "gmp": {
     "value": 0,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7465,6 +7477,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 0
+    },
+    {
+     "d": "2026-11-09",
      "v": 0
     }
    ],
@@ -7557,7 +7573,7 @@
     "nii": 0.43,
     "retail": 1.93,
     "total": 1.18,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7586,7 +7602,7 @@
    "gmp": {
     "value": 105,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7636,6 +7652,10 @@
     {
      "d": "2026-11-08",
      "v": 105
+    },
+    {
+     "d": "2026-11-09",
+     "v": 105
     }
    ],
    "gmpPrev": 105,
@@ -7644,7 +7664,7 @@
     "nii": 858.08,
     "retail": 556.09,
     "total": 536.89,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7670,7 +7690,7 @@
    "gmp": {
     "value": 0,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7720,6 +7740,10 @@
     {
      "d": "2026-11-08",
      "v": 0
+    },
+    {
+     "d": "2026-11-09",
+     "v": 0
     }
    ],
    "gmpPrev": 0,
@@ -7728,7 +7752,7 @@
     "nii": 7.04,
     "retail": 4.45,
     "total": 4.27,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7810,7 +7834,7 @@
     "nii": 42.57,
     "retail": 17.99,
     "total": 23.89,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7925,7 +7949,7 @@
     "nii": 425.02,
     "retail": 235.72,
     "total": 248.65,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -7941,7 +7965,7 @@
    "gmp": {
     "value": 1,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -7991,6 +8015,10 @@
     {
      "d": "2026-11-08",
      "v": 1
+    },
+    {
+     "d": "2026-11-09",
+     "v": 1
     }
    ],
    "status": "closed",
@@ -8009,7 +8037,7 @@
     "nii": 1.38,
     "retail": 2.26,
     "total": 1.9,
-    "asOf": "2026-11-08 16:04 IST · IPO Ji",
+    "asOf": "2026-11-09 17:19 IST · IPO Ji",
     "day": "Final"
    }
   },
@@ -8070,7 +8098,7 @@
    "gmp": {
     "value": 0,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -8103,6 +8131,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 0
+    },
+    {
+     "d": "2026-11-09",
      "v": 0
     }
    ],
@@ -8199,7 +8231,7 @@
    "gmp": {
     "value": 1,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -8217,9 +8249,13 @@
     {
      "d": "2026-11-08",
      "v": 1
+    },
+    {
+     "d": "2026-11-09",
+     "v": 1
     }
    ],
-   "status": "upcoming",
+   "status": "open",
    "score": 0,
    "verdict": "avoid",
    "reasons": [],
@@ -8243,7 +8279,7 @@
    "gmp": {
     "value": 4,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -8260,6 +8296,10 @@
     },
     {
      "d": "2026-11-08",
+     "v": 4
+    },
+    {
+     "d": "2026-11-09",
      "v": 4
     }
    ],
@@ -8288,7 +8328,7 @@
    "gmp": {
     "value": 27,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -8302,9 +8342,13 @@
     {
      "d": "2026-11-08",
      "v": 27
+    },
+    {
+     "d": "2026-11-09",
+     "v": 27
     }
    ],
-   "status": "upcoming",
+   "status": "open",
    "score": 2,
    "verdict": "wait",
    "reasons": [
@@ -8329,7 +8373,7 @@
    "gmp": {
     "value": 8,
     "range": null,
-    "asOf": "2026-11-08 16:04 IST · Investorgain"
+    "asOf": "2026-11-09 17:19 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -8339,9 +8383,13 @@
     {
      "d": "2026-11-08",
      "v": 8
+    },
+    {
+     "d": "2026-11-09",
+     "v": 8
     }
    ],
-   "status": "upcoming",
+   "status": "open",
    "score": 0,
    "verdict": "avoid",
    "reasons": [],
