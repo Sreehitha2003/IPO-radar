@@ -1,5 +1,23 @@
 [
  {
+  "date": "2026-11-14",
+  "generatedAt": "2026-11-14 16:09 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "1 IPOs open and 4 coming up. Wait for final-day numbers: HGS (India) NSE SME C, HGS (India) NSE SME CT, Crystal Crop Protection and Watrana Rentals. Avoid: Mahanadi Coalfields. Closing today: HGS (India) NSE SME CT. Opening today: HGS (India) NSE SME CT. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "hgsc",
+   "hgsct",
+   "crystalcropprotection",
+   "watranarentals"
+  ],
+  "avoid": [
+   "mahanadicoalfields"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-13",
   "generatedAt": "2026-11-13 16:44 IST",
   "headline": "Nothing strong on the checklist today",
