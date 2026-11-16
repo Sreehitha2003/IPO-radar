@@ -1,5 +1,21 @@
 [
  {
+  "date": "2026-11-16",
+  "generatedAt": "2026-11-16 17:13 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "0 IPOs open and 3 coming up. Wait for final-day numbers: Watrana Rentals. Avoid: Crystal Crop Protection and Mahanadi Coalfields. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "watranarentals"
+  ],
+  "avoid": [
+   "crystalcropprotection",
+   "mahanadicoalfields"
+  ],
+  "note": "7 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-15",
   "generatedAt": "2026-11-15 16:42 IST",
   "headline": "Nothing strong on the checklist today",
