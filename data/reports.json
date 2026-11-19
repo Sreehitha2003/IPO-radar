@@ -1,5 +1,22 @@
 [
  {
+  "date": "2026-11-19",
+  "generatedAt": "2026-11-19 17:22 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "3 IPOs open and 1 coming up. Wait for final-day numbers: Crystal Crop Protection and Watrana Rentals. Avoid: Mahanadi Coalfields and Shree Siddhivinayak Greentech Industries. Opening today: Watrana Rentals and Mahanadi Coalfields. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "crystalcropprotection",
+   "watranarentals"
+  ],
+  "avoid": [
+   "mahanadicoalfields",
+   "shreesiddhivinayakgreentechindustries"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-18",
   "generatedAt": "2026-11-18 17:25 IST",
   "headline": "Nothing strong on the checklist today",
