@@ -1,5 +1,24 @@
 [
  {
+  "date": "2026-11-20",
+  "generatedAt": "2026-11-20 17:23 IST",
+  "headline": "No clear buys today; Crystal Crop Protection looks good for listing gains",
+  "summary": "3 IPOs open and 2 coming up. Listing gains only: Crystal Crop Protection. Wait for final-day numbers: Watrana Rentals. Avoid: Mahanadi Coalfields, Shree Siddhivinayak Greentech Industries and Foodlink F&B Holdings (India). Closing today: Crystal Crop Protection. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [
+   "crystalcropprotection"
+  ],
+  "wait": [
+   "watranarentals"
+  ],
+  "avoid": [
+   "mahanadicoalfields",
+   "shreesiddhivinayakgreentechindustries",
+   "foodlinkfbholdings"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-19",
   "generatedAt": "2026-11-19 17:22 IST",
   "headline": "Nothing strong on the checklist today",
