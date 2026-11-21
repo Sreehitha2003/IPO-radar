@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20 17:23 IST",
+ "updated": "2026-11-21 16:54 IST",
  "ipos": {
   "greenasiaimpex": {
    "id": "greenasiaimpex",
@@ -4376,13 +4376,9 @@
    "gmp": {
     "value": 250,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 250
-    },
     {
      "d": "2026-11-02",
      "v": 250
@@ -4457,6 +4453,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 250
+    },
+    {
+     "d": "2026-11-21",
      "v": 250
     }
    ],
@@ -5813,13 +5813,9 @@
    "gmp": {
     "value": 66,
     "range": null,
-    "asOf": "2026-11-19 17:22 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-10-31",
-     "v": 66
-    },
     {
      "d": "2026-11-01",
      "v": 66
@@ -5894,6 +5890,10 @@
     },
     {
      "d": "2026-11-19",
+     "v": 66
+    },
+    {
+     "d": "2026-11-21",
      "v": 66
     }
    ],
@@ -6403,13 +6403,9 @@
    "gmp": {
     "value": 13,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 13
-    },
     {
      "d": "2026-11-02",
      "v": 13
@@ -6484,6 +6480,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 13
+    },
+    {
+     "d": "2026-11-21",
      "v": 13
     }
    ],
@@ -6520,13 +6520,9 @@
    "gmp": {
     "value": 69,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 68
-    },
     {
      "d": "2026-11-02",
      "v": 68
@@ -6601,6 +6597,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 69
+    },
+    {
+     "d": "2026-11-21",
      "v": 69
     }
    ],
@@ -6732,13 +6732,9 @@
    "gmp": {
     "value": 54,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 65
-    },
     {
      "d": "2026-11-02",
      "v": 54
@@ -6814,6 +6810,10 @@
     {
      "d": "2026-11-20",
      "v": 54
+    },
+    {
+     "d": "2026-11-21",
+     "v": 54
     }
    ],
    "status": "closed",
@@ -6850,13 +6850,9 @@
    "gmp": {
     "value": 15.5,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 25
-    },
     {
      "d": "2026-11-02",
      "v": 19.5
@@ -6932,6 +6928,10 @@
     {
      "d": "2026-11-20",
      "v": 15.5
+    },
+    {
+     "d": "2026-11-21",
+     "v": 15.5
     }
    ],
    "status": "closed",
@@ -6968,13 +6968,9 @@
    "gmp": {
     "value": 0,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 0
-    },
     {
      "d": "2026-11-02",
      "v": 0
@@ -7050,6 +7046,10 @@
     {
      "d": "2026-11-20",
      "v": 0
+    },
+    {
+     "d": "2026-11-21",
+     "v": 0
     }
    ],
    "status": "closed",
@@ -7089,13 +7089,9 @@
      8,
      9
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 9
-    },
     {
      "d": "2026-11-02",
      "v": 9
@@ -7171,6 +7167,10 @@
     {
      "d": "2026-11-20",
      "v": 8
+    },
+    {
+     "d": "2026-11-21",
+     "v": 8
     }
    ],
    "status": "closed",
@@ -7210,7 +7210,7 @@
      4,
      5
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -7276,6 +7276,10 @@
     {
      "d": "2026-11-20",
      "v": 4
+    },
+    {
+     "d": "2026-11-21",
+     "v": 4
     }
    ],
    "status": "closed",
@@ -7316,13 +7320,9 @@
      10,
      11
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 5
-    },
     {
      "d": "2026-11-02",
      "v": 5
@@ -7398,6 +7398,10 @@
     {
      "d": "2026-11-20",
      "v": 10
+    },
+    {
+     "d": "2026-11-21",
+     "v": 10
     }
    ],
    "status": "closed",
@@ -7449,7 +7453,7 @@
      0,
      0
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -7527,6 +7531,10 @@
     {
      "d": "2026-11-20",
      "v": 0
+    },
+    {
+     "d": "2026-11-21",
+     "v": 0
     }
    ],
    "gmpPrev": 0,
@@ -7564,7 +7572,7 @@
      1,
      1
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -7618,6 +7626,10 @@
     {
      "d": "2026-11-20",
      "v": 1
+    },
+    {
+     "d": "2026-11-21",
+     "v": 1
     }
    ],
    "gmpPrev": 1,
@@ -7658,13 +7670,9 @@
      105,
      105
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 70
-    },
     {
      "d": "2026-11-02",
      "v": 70
@@ -7740,6 +7748,10 @@
     {
      "d": "2026-11-20",
      "v": 105
+    },
+    {
+     "d": "2026-11-21",
+     "v": 105
     }
    ],
    "gmpPrev": 105,
@@ -7777,13 +7789,9 @@
      0,
      0
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 0
-    },
     {
      "d": "2026-11-02",
      "v": 0
@@ -7859,6 +7867,10 @@
     {
      "d": "2026-11-20",
      "v": 0
+    },
+    {
+     "d": "2026-11-21",
+     "v": 0
     }
    ],
    "gmpPrev": 0,
@@ -7899,7 +7911,7 @@
      8,
      8
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -7948,6 +7960,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 8
+    },
+    {
+     "d": "2026-11-21",
      "v": 8
     }
    ],
@@ -8009,7 +8025,7 @@
    "gmp": {
     "value": 28,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · IPO Watch"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch"
    },
    "gmpHistory": [
     {
@@ -8059,6 +8075,10 @@
     {
      "d": "2026-11-20",
      "v": 28
+    },
+    {
+     "d": "2026-11-21",
+     "v": 28
     }
    ],
    "status": "closed",
@@ -8099,13 +8119,9 @@
      1,
      1
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 5
-    },
     {
      "d": "2026-11-02",
      "v": 15
@@ -8180,6 +8196,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 1
+    },
+    {
+     "d": "2026-11-21",
      "v": 1
     }
    ],
@@ -8260,13 +8280,9 @@
    "gmp": {
     "value": 0,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
-    {
-     "d": "2026-11-01",
-     "v": 0
-    },
     {
      "d": "2026-11-02",
      "v": 0
@@ -8341,6 +8357,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 0
+    },
+    {
+     "d": "2026-11-21",
      "v": 0
     }
    ],
@@ -8606,7 +8626,7 @@
    "gmp": {
     "value": 27,
     "range": null,
-    "asOf": "2026-11-20 17:23 IST · Investorgain"
+    "asOf": "2026-11-21 16:54 IST · Investorgain"
    },
    "gmpHistory": [
     {
@@ -8667,6 +8687,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 27
+    },
+    {
+     "d": "2026-11-21",
      "v": 27
     }
    ],
@@ -8768,25 +8792,25 @@
    "open": "2026-11-18",
    "close": "2026-11-20",
    "allot": "2026-11-21",
-   "status": "open",
+   "status": "closed",
    "score": 4,
    "verdict": "listing",
    "reasons": [
-    "Modest grey market premium (6%)",
+    "Modest grey market premium (5%)",
     "Institutions (QIB) bid 15.81x",
     "Subscribed 17.64x overall"
    ],
    "risks": [
     "No financials on file: verdict uses grey market and demand only"
    ],
-   "summary": "Good for a listing-day trade; sell on listing rather than holding.",
+   "summary": "Bidding closed. If you were allotted, a listing gain looks likely.",
    "gmp": {
-    "value": 15,
+    "value": 14,
     "range": [
      14,
-     15
+     14.5
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Ji, IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Ji, IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -8824,16 +8848,20 @@
     {
      "d": "2026-11-20",
      "v": 15
+    },
+    {
+     "d": "2026-11-21",
+     "v": 14
     }
    ],
-   "gmpPrev": 17,
+   "gmpPrev": 15,
    "subs": {
     "qib": 15.81,
     "nii": 39.16,
     "retail": 9.62,
     "total": 17.64,
-    "asOf": "2026-11-20 17:23 IST · IPO Ji",
-    "day": "Latest"
+    "asOf": "2026-11-21 16:54 IST · IPO Ji",
+    "day": "Final"
    }
   },
   "antalaindustriesemailprotected": {
@@ -8906,12 +8934,12 @@
    "close": "2026-11-23",
    "allot": "2026-11-24",
    "gmp": {
-    "value": 67,
+    "value": 65,
     "range": [
      45,
-     67
+     65
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Ji, IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Ji, IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -8945,6 +8973,10 @@
     {
      "d": "2026-11-20",
      "v": 67
+    },
+    {
+     "d": "2026-11-21",
+     "v": 65
     }
    ],
    "status": "open",
@@ -8952,20 +8984,20 @@
    "verdict": "wait",
    "reasons": [
     "Grey market 27% above issue price",
-    "Subscribed 11.99x overall"
+    "Subscribed 12.05x overall"
    ],
    "risks": [
     "SME issue: small company, big lots, low liquidity",
     "No financials on file: verdict uses grey market and demand only"
    ],
    "summary": "Mixed signals. Decide on the last day after the institutional (QIB) numbers are in.",
-   "gmpPrev": 65,
+   "gmpPrev": 67,
    "subs": {
     "qib": 0,
-    "nii": 20.34,
-    "retail": 15.3,
-    "total": 11.99,
-    "asOf": "2026-11-20 17:23 IST · IPO Ji",
+    "nii": 20.36,
+    "retail": 15.42,
+    "total": 12.05,
+    "asOf": "2026-11-21 16:54 IST · IPO Ji",
     "day": "Latest"
    }
   },
@@ -8979,12 +9011,12 @@
    "close": "2026-11-23",
    "allot": "2026-11-24",
    "gmp": {
-    "value": 1.5,
+    "value": 0.7,
     "range": [
-     1,
-     2
+     0,
+     1
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Ji, IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Ji, IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -9014,6 +9046,10 @@
     {
      "d": "2026-11-20",
      "v": 1.5
+    },
+    {
+     "d": "2026-11-21",
+     "v": 0.7
     }
    ],
    "status": "open",
@@ -9025,13 +9061,13 @@
     "No financials on file: verdict uses grey market and demand only"
    ],
    "summary": "Weak on the checklist. Skip unless you have your own strong view.",
-   "gmpPrev": 2.7,
+   "gmpPrev": 1.5,
    "subs": {
     "qib": 1.37,
     "nii": 0.18,
     "retail": 0.24,
-    "total": 0.48,
-    "asOf": "2026-11-20 17:23 IST · IPO Ji",
+    "total": 0.49,
+    "asOf": "2026-11-21 16:54 IST · IPO Ji",
     "day": "Latest"
    }
   },
@@ -9050,7 +9086,7 @@
      0,
      0
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
@@ -9059,6 +9095,10 @@
     },
     {
      "d": "2026-11-20",
+     "v": 0
+    },
+    {
+     "d": "2026-11-21",
      "v": 0
     }
    ],
@@ -9089,12 +9129,50 @@
      12,
      12
     ],
-    "asOf": "2026-11-20 17:23 IST · IPO Watch, Investorgain"
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
    },
    "gmpHistory": [
     {
      "d": "2026-11-20",
      "v": 12
+    },
+    {
+     "d": "2026-11-21",
+     "v": 12
+    }
+   ],
+   "status": "upcoming",
+   "score": 0,
+   "verdict": "avoid",
+   "reasons": [],
+   "risks": [
+    "No grey-market quote yet",
+    "No financials on file: verdict uses grey market and demand only"
+   ],
+   "summary": "Weak on the checklist. Skip unless you have your own strong view.",
+   "gmpPrev": 12
+  },
+  "integrismedtech": {
+   "id": "integrismedtech",
+   "name": "Integris Medtech",
+   "board": "Mainboard",
+   "priceHigh": null,
+   "priceLow": null,
+   "open": "2026-11-27",
+   "close": "2026-12-01",
+   "allot": "2026-12-02",
+   "gmp": {
+    "value": 0,
+    "range": [
+     0,
+     0
+    ],
+    "asOf": "2026-11-21 16:54 IST · IPO Watch, Investorgain"
+   },
+   "gmpHistory": [
+    {
+     "d": "2026-11-21",
+     "v": 0
     }
    ],
    "status": "upcoming",

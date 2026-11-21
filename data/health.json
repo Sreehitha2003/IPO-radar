@@ -1,15 +1,15 @@
 {
- "date": "2026-11-20",
+ "date": "2026-11-21",
  "health": [
   {
    "source": "IPO Ji",
    "ok": true,
-   "rows": 5
+   "rows": 6
   },
   {
    "source": "IPO Watch",
    "ok": true,
-   "rows": 16
+   "rows": 17
   },
   {
    "source": "Investorgain",
@@ -19,7 +19,7 @@
   {
    "source": "IPO Central",
    "ok": false,
-   "rows": 0
+   "error": "HTTP 403"
   },
   {
    "source": "Chittorgarh (subscription)",
