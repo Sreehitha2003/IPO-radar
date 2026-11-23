@@ -1,5 +1,26 @@
 [
  {
+  "date": "2026-11-23",
+  "generatedAt": "2026-11-23 18:42 IST",
+  "headline": "Nothing strong on the checklist today",
+  "summary": "3 IPOs open and 5 coming up. Wait for final-day numbers: Watrana Rentals, Mahanadi Coalfields, Foodlink F&B Holdings (India), A J Packaging and Matangi Rubber. Avoid: Shree Siddhivinayak Greentech Industries, Integris Medtech and Monomark Engineering (India). Closing today: Watrana Rentals and Mahanadi Coalfields. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [],
+  "wait": [
+   "watranarentals",
+   "mahanadicoalfields",
+   "foodlinkfbholdings",
+   "ajpackaging",
+   "matangirubber"
+  ],
+  "avoid": [
+   "shreesiddhivinayakgreentechindustries",
+   "integrismedtech",
+   "monomarkengineering"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-22",
   "generatedAt": "2026-11-22 17:09 IST",
   "headline": "Nothing strong on the checklist today",
