@@ -1,5 +1,28 @@
 [
  {
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25 18:41 IST",
+  "headline": "No clear buys today; Monomark Engineering (India) looks good for listing gains",
+  "summary": "2 IPOs open and 7 coming up. Listing gains only: Monomark Engineering (India). Wait for final-day numbers: Shree Siddhivinayak Greentech Industries, Foodlink F&B Holdings (India), A J Packaging and Matangi Rubber. Avoid: Integris Medtech, Airpro Technology India, Encube Ethicals and Milestone Gears. Opening today: Shree Siddhivinayak Greentech Industries. Your stocks to review: NSDL.",
+  "apply": [],
+  "listing": [
+   "monomarkengineering"
+  ],
+  "wait": [
+   "shreesiddhivinayakgreentechindustries",
+   "foodlinkfbholdings",
+   "ajpackaging",
+   "matangirubber"
+  ],
+  "avoid": [
+   "integrismedtech",
+   "airprotechnology",
+   "encubeethicals",
+   "milestonegears"
+  ],
+  "note": "6 of 10 data sources failed today; the rest were used."
+ },
+ {
   "date": "2026-11-24",
   "generatedAt": "2026-11-24 19:27 IST",
   "headline": "Nothing strong on the checklist today",
@@ -1276,48 +1299,5 @@
    "acevector"
   ],
   "note": "6 of 10 data sources failed today; the rest were used."
- },
- {
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26 23:48 IST",
-  "headline": "Moneyview is today's strongest call",
-  "summary": "12 IPOs open and 16 coming up. Apply: Moneyview. Listing gains only: German Green Steel and Power, Orient Cables (India), SRIT India and A-One Steels India. Wait for final-day numbers: Shah Investor's Home, Peshwa Wheat and Dudani Retail. Avoid: Runwal Enterprises, Green Asia Impex, Himalayan Solar, Sai Urja Indo Ventures, Acme Universal Safezone 9, Pind Hospitality, Shivchem Agro, Black Opal Consultants, Papadmalji Agro Foods, Vans Electroengineerings, Nityas Gems Jewellery, Vishal Nirmiti, Dove Soft, EverestIMS Technologies, Shree TNB Polymers, SJP Ultrasonics, Paramount Syntex, Omara Ventures, Sai Urja Indo BSE SME O and Acevector.",
-  "apply": [
-   "moneyview"
-  ],
-  "listing": [
-   "german-green-steel",
-   "orient-cables",
-   "srit-india",
-   "a-one-steels"
-  ],
-  "wait": [
-   "shah-investors-home",
-   "peshwawheat",
-   "dudaniretail"
-  ],
-  "avoid": [
-   "runwal-enterprises",
-   "greenasiaimpex",
-   "himalayansolar",
-   "saiurjaindoventures",
-   "acmeuniversalsafezone9",
-   "pindhospitality",
-   "shivchemagro",
-   "blackopalconsultants",
-   "papadmaljiagrofoods",
-   "vanselectroengineerings",
-   "nityasgemsjewellery",
-   "vishalnirmiti",
-   "dovesoft",
-   "everestimstechnologies",
-   "shreetnbpolymers",
-   "sjpultrasonics",
-   "paramountsyntex",
-   "omaraventures",
-   "saiurjaindoo",
-   "acevector"
-  ],
-  "note": "3 of 7 data sources failed today; the rest were used."
  }
 ]
